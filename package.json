@@ -9,7 +9,9 @@
     "normalize.css": "^8.0.0",
     "normalize.scss": "^0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-autoprefixer": "^4.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
