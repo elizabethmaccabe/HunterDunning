@@ -359,6 +359,152 @@ th {
   padding: 0; }
 
 /* Base */
+@font-face {
+  font-family: FuturaLight;
+  src: url("../fonts/Futura BT Light.ttf"); }
+
+@font-face {
+  font-family: FuturaLightItalic;
+  src: url("../fonts/Futura BT Light Italic.ttf"); }
+
+@font-face {
+  font-family: FuturaBook;
+  src: url("../fonts/Futura BT Book.ttf"); }
+
+@font-face {
+  font-family: FuturaBookItalic;
+  src: url("../fonts/Futura BT Book Italic.ttf"); }
+
+@font-face {
+  font-family: FuturaMedium;
+  src: url("../fonts/Futura BT Medium.ttf"); }
+
+@font-face {
+  font-family: FuturaMediumItalic;
+  src: url("../fonts/Futura BT Medium Italic.ttf"); }
+
+@font-face {
+  font-family: FuturaHeavy;
+  src: url("../fonts/Futura BT Heavy.ttf"); }
+
+@font-face {
+  font-family: FuturaHeavyItalic;
+  src: url("../fonts/Futura BT Heavy Italic.ttf"); }
+
+@font-face {
+  font-family: FuturaBoldItalic;
+  src: url("../fonts/Futura BT Bold Italic.ttf"); }
+
+@font-face {
+  font-family: FuturaExtraBlack;
+  src: url("../fonts/Futura BT Extra Black.ttf"); }
+
+@font-face {
+  font-family: FuturaCondensedLight;
+  src: url("../fonts/Futura BT Condensed Light.ttf"); }
+
+@font-face {
+  font-family: FuturaCondensedMedium;
+  src: url("../fonts/Futura BT Condensed Medium.ttf"); }
+
+@font-face {
+  font-family: FuturaCondensedBold;
+  src: url("../fonts/Futura BT Condensed Bold.ttf"); }
+
+@font-face {
+  font-family: GothamLight;
+  src: url("../fonts/Gotham Light.ttf"); }
+
+@font-face {
+  font-family: GothamLightItalic;
+  src: url("../fonts/Gotham Light Italic.ttf"); }
+
+@font-face {
+  font-family: GothamBook;
+  src: url("../fonts/Gotham Book.ttf"); }
+
+@font-face {
+  font-family: GothamBookItalic;
+  src: url("../fonts/Gotham Book Italic.ttf"); }
+
+@font-face {
+  font-family: GothamMedium;
+  src: url("../fonts/Gotham Medium.ttf"); }
+
+@font-face {
+  font-family: GothamMediumItalic;
+  src: url("../fonts/Gotham Medium Italic.ttf"); }
+
+@font-face {
+  font-family: GothamBold;
+  src: url("../fonts/Gotham Bold.ttf"); }
+
+@font-face {
+  font-family: GothamBoldItalic;
+  src: url("../fonts/Gotham Bold Italic.ttf"); }
+
 /* Layout Related */
 /* Components */
 /* Page Specific */
+.font1 {
+  font-family: FuturaLight; }
+
+.font2 {
+  font-family: FuturaLightItalic; }
+
+.font3 {
+  font-family: FuturaBook; }
+
+.font4 {
+  font-family: FuturaBookItalic; }
+
+.font5 {
+  font-family: FuturaMedium; }
+
+.font6 {
+  font-family: FuturaMediumItalic; }
+
+.font7 {
+  font-family: FuturaHeavy; }
+
+.font8 {
+  font-family: FuturaHeavyItalic; }
+
+.font9 {
+  font-family: FuturaBoldItalic; }
+
+.font10 {
+  font-family: FuturaExtraBlack; }
+
+.font11 {
+  font-family: FuturaCondensedLight; }
+
+.font12 {
+  font-family: FuturaCondensedMedium; }
+
+.font13 {
+  font-family: FuturaCondensedBold; }
+
+.font14 {
+  font-family: GothamLight; }
+
+.font15 {
+  font-family: GothamLightItalic; }
+
+.font16 {
+  font-family: GothamBook; }
+
+.font17 {
+  font-family: GothamBookItalic; }
+
+.font18 {
+  font-family: GothamMedium; }
+
+.font19 {
+  font-family: GothamMediumItalic; }
+
+.font20 {
+  font-family: GothamBold; }
+
+.font21 {
+  font-family: GothamBoldItalic; }
