@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all typography styling
+// -----------------------------------------------------------------------------
+
+html, body
+{
+    font-family: GothamBook, "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1
+{
+    @include fontSize(55px);
+    font-family: FuturaBook, "Arial", sans-serif;
+    font-weight: 500;
+    letter-spacing: 2.29px;
+    line-height: 52px;
+}
+
+a
+{
+    text-decoration: none;
+}

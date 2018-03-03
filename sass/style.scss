@@ -12,6 +12,8 @@
 
 /* Base */
 @import "base/fonts";
+@import "base/typography";
+@import "base/reset";
 
 /* Layout Related */
 @import "layout/footer";
@@ -23,4 +25,27 @@
 
 
 /* Page Specific */
+@import "pages/home";
 
+
+.wrapper
+{
+    margin: 0 auto;
+    padding: 10px;
+    height: 100%;
+}
+
+.container
+{
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height: 100%;
+    z-index: 1;
+}
+
+.section
+{
+    display: block;
+    padding: 100px 0;   
+}
