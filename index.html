@@ -11,19 +11,34 @@
             <header>
                 <div class="container">
                     <section class="logo">
-                        <a href="index.html"><img src="assets/images/logo.png"></a>
-                        <i class="maki maki-lg maki-fw maki-fuel"></i>
+                        <a href="index.html"><img src="assets/images/homepage/logo-large.png"></a>
                     </section><!-- [end] .logo -->
                     <section class="navigation">
                         <ul>
                             <li>+44 (0) 1243 779789</li>
                             <li><img class="triangle" src="assets/images/triangle-green.png"></li>
-                            <li><a class="nav-link" href="#">Login</a></li>
+                            <li><a class="nav-link" href="javascript:void(0)">Login</a></li>
                             <li><img class="triangle" src="assets/images/triangle-green.png"></li>
                             <li><a class="nav-link" href="jobs.html">Jobs</a></li>
                             <li><a class="nav-link" href="employers.html">Employers</a></li>
-                            <li><a href="#"><img class="hamburger" src="assets/images/menu-hamburger.png"></a></li>
+                            <li><a href="javascript:void(0)"><img class="open-nav" onclick="openNav()" src="assets/images/menu-hamburger.png"></a></li>
                         </ul>
+                    </section>
+                    <section class="main-navigation">
+                        <div id="main-nav" class="overlay">
+                            <a href="javascript:void(0)" onclick="closeNav()"><span class="close-nav-container"><img class="close-nav" src="assets/images/cross.png"></span></a>
+                            <ul class="primary-nav-content">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="javascript:void(0)">Jobs</a></li>
+                                <li><a href="javascript:void(0)">Employers</a></li>
+                            </ul>
+                            <ul class="secondary-nav-content">
+                                <li><a href="javascript:void(0)">About Hunter Dunning</a></li>
+                                <li><a href="javascript:void(0)">Latest news</a></li>
+                                <li><a href="javascript:void(0)">Contact us</a></li>
+                                <li><a href="javascript:void(0)">Login to your account</a></li>
+                            </ul>
+                        </div>
                     </section>
                 </div>
             </header>
@@ -34,69 +49,187 @@
                             <h1>Build your architecture career with us.</h1>
                             <ul class="form-fields">
                                 <li><input type="text" placeholder="Search for keywords"></li>
-                                <li>
-                                    <div id="dl-overlay-type"></div>
-                                    <div id="dl-type">
-                                        <ul>
-                                            <li class="dl-parent-type">Job type<span><img src="assets/images/triangle-black.png"></span>
-                                                <ul class="dl-content-type">
-                                                    <li><a>Contract/Temporary</a></li>
-                                                    <li><a>Permanent</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                
+                                <li class="dropdown dropdown-type"><a href="#">Job type<span><img src="assets/images/triangle-black.png"></span></a>
+                                    <ul class="dropdown-content content-type">
+                                        <li><a href="javascript:void(0)">Contract/Temporary</a></li>
+                                        <li><a href="javascript:void(0)">Permanent</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <div id="dl-overlay-category"></div>
-                                    <div id="dl-category">
-                                        <ul>
-                                            <li class="dl-parent-category">Category<span><img src="assets/images/triangle-black.png"></span>
-                                                <ul class="dl-content-category">
-                                                    <li><a>Architects</a></li>
-                                                    <li><a>Architectural Assistants</a></li>
-                                                    <li><a>Interior Designers</a></li>
-                                                    <li><a>Landscape Design &amp; Planning</a></li>
-                                                    <li><a>Other</a></li>
-                                                    <li><a>Senior Appointments</a></li>
-                                                    <li><a>Technical Coordinators/ Managers</a></li>
-                                                    <li><a>Technicians/Technologists</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <li class="dropdown dropdown-category"><a href="#">Category<span><img src="assets/images/triangle-black.png"></span></a>
+                                    <ul class="dropdown-content content-category">
+                                        <li><a href="javascript:void(0)">Architects</a></li>
+                                        <li><a href="javascript:void(0)">Architectural Assistants</a></li>
+                                        <li><a href="javascript:void(0)">Interior Designers</a></li>
+                                        <li><a href="javascript:void(0)">Landscape Design &amp; Planning</a></li>
+                                        <li><a href="javascript:void(0)">Other</a></li>
+                                        <li><a href="javascript:void(0)">Senior Appointments</a></li>
+                                        <li><a href="javascript:void(0)">Technical Coordinators/ Managers</a></li>
+                                        <li><a href="javascript:void(0)">Technicians/Technologists</a></li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <div id="dl-overlay-location"></div>
-                                    <div id="dl-location">
-                                        <ul>
-                                            <li class="dl-parent-location">Location<span><img src="assets/images/triangle-black.png"></span>
-                                                <ul class="dl-content-location">
-                                                    <li><a>East Anglia</a></li>
-                                                    <li><a>East Midlands</a></li>
-                                                    <li><a>Ireland</a></li>
-                                                    <li><a>London</a></li>
-                                                    <li><a>North</a></li>
-                                                    <li><a>North East</a></li>
-                                                    <li><a>North West</a></li>
-                                                    <li><a>Norhern Ireland</a></li>
-                                                    <li><a>Scotland</a></li>
-                                                    <li><a>South East</a></li>
-                                                    <li><a>South West</a></li>
-                                                    <li><a>Wales</a></li>
-                                                    <li><a>West Midlands</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                <li class="dropdown dropdown-location"><a href="#">Location<span><img src="assets/images/triangle-black.png"></span></a>
+                                    <ul class="dropdown-content content-location">
+                                        <li><a href="javascript:void(0)">East Anglia</a></li>
+                                        <li><a href="javascript:void(0)">East Midlands</a></li>
+                                        <li><a href="javascript:void(0)">Ireland</a></li>
+                                        <li><a href="javascript:void(0)">London</a></li>
+                                        <li><a href="javascript:void(0)">North</a></li>
+                                        <li><a href="javascript:void(0)">North East</a></li>
+                                        <li><a href="javascript:void(0)">North West</a></li>
+                                        <li><a href="javascript:void(0)">Norhern Ireland</a></li>
+                                        <li><a href="javascript:void(0)">Scotland</a></li>
+                                        <li><a href="javascript:void(0)">South East</a></li>
+                                        <li><a href="javascript:void(0)">South West</a></li>
+                                        <li><a href="javascript:void(0)">Wales</a></li>
+                                        <li><a href="javascript:void(0)">West Midlands</a></li>
+                                    </ul>
                                 </li>
-                                <li class="search-field"><button class="search"><img class="search" src="assets/images/search-black.png"></button></li>
+                                <li class="search-field"><button class="search"><img class="search" src="assets/images/homepage/search-black.png"></button></li>
                             </ul>
                         </form>
+                    </section><!-- [end] search form section -->
+                    <section class="focus">
+                        <div class="category">
+                            <h2>Focus on a category</h2>
+                            <ul>
+                                <li><a href=#>Architects (79)</a></li>
+                                <li><a href=#>Technicians/Technologists (29)</a></li>
+                                <li><a href=#>Architectural Assistants (11)</a></li>
+                                <li><a href=#>Landscape Design &amp; Planning (0)</a></li>
+                                <li><a href=#>Senior Appointments (0)</a></li>
+                                <li><a href=#>Technical Coordinators / Managers (1)</a></li>
+                                <li><a href=#>Interior Designers (9)</a></li>
+                                <li><a href=#>Other (3)</a></li>
+                            </ul>
+                        </div>
+                        <div class="region">
+                            <h2>Focus on a region</h2>
+                            <ul>
+                                <li><a href=#>London</a></li>
+                                <li><a href=#>South East</a></li>
+                                <li><a href=#>South West</a></li>
+                                <li><a href=#>North</a></li>
+                                <li><a href=#>North East</a></li>
+                                <li><a href=#>North West</a></li>
+                                <li><a href=#>East Anglia</a></li>
+                                <li><a href=#>East Midlands</a></li>
+                                <li><a href=#>West Midlands</a></li>
+                                <li><a href=#>Scotland</a></li>
+                                <li><a href=#>Wales</a></li>
+                                <li><a href=#>Northern Ireland</a></li>
+                                <li><a href=#>Ireland</a></li>
+                            </ul>
+                        </div>
+                    </section><!-- [end] focus section -->
+                </div>
+            </section><!-- [end] masthead section -->
+            
+            <section class="section featured">
+                <div class="container">
+                    <h2>Featured Jobs</h2>
+                    <ul class="jobs">
+                        <li>
+                            <a class="title" href="javascript:void(0)">Architect For High-End Residential Specialist</a>
+                            <p class="details">Oxford, Oxfordshire &#8226; Permanent &#8226; £38,000 - £45,000</p>
+                            <p class="description">A new opportunity for an Architect to join a thriving multidisciplinary practice. You will run your own projects from concept through to completion. Benefits include a competitive salary and the chance to join a growing team within an established and reputable practice.</p>
+                            <ul class="options">
+                                <li><a class="more" href="javascript:void(0)">Find out more</a>&#8226;<a class="apply" href="javascript:void(0)">Apply now</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="title" href="javascript:void(0)">Architectural Technologist</a>
+                            <p class="details">Guilford, Surrey &#8226; Permanent &#8226; £30,000 - £35,000</p>
+                            <p class="description">The opportunity has arisen for a fast paced and ambitious Architectural Technician/ Technologist to join an expanding property consultancy in Guildford. My client works within the bespoke high end residential sector and offers all employees very real opportunities for career progression and professional development.</p>
+                            <ul class="options">
+                                <li><a class="more" href="javascript:void(0)">Find out more</a>&#8226;<a class="apply" href="javascript:void(0)">Apply now</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="title" href="javascript:void(0)">Managing Director</a>
+                            <p class="details">North London &#8226; Permanent &#8226; £60,000 - £80,000 basic. Up to £120,000 OTE</p>
+                            <p class="description">Join a well-established and creative company as their Managing Director and take responsibility of all aspects of the business while under guidance of its holding company. The role offers an OTE of £120k per annum and the opportunity to take the reins of a very exciting business.</p>
+                            <ul class="options">
+                                <li><a class="more" href="javascript:void(0)">Find out more</a>&#8226;<a class="apply" href="javascript:void(0)">Apply now</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="title" href="javascript:void(0)">Senior F&amp;B / Hospitality Interior Designer</a>
+                            <p class="details">Shoreditch, London &#8226; Permanent &#8226; £45,000 - £50,000+</p>
+                            <p class="description">Do you pride yourself in your creative skills and knowledge of the F&amp;B / Hospitality sector? An international restaurant chain is looking for a top-notch Senior Interior Designer with outstanding creative skills and all-round abilities to join their in-house design team. If you are looking for a place to be your artistic self and get an incredible salary and perks while doing so, this is the opportunity for you!</p>
+                            <ul class="options">
+                                <li><a class="more" href="javascript:void(0)">Find out more</a>&#8226;<a class="apply" href="javascript:void(0)">Apply now</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="title" href="javascript:void(0)">Associate / Senior Associate (Residential/Mixed - Use Project Experience)</a>
+                            <p class="details">London &#8226; Permanent &#8226; DOE £50,000 - £55,000</p>
+                            <p class="description">My client has experience of over 25 years in business and is a well-known national practice. They have built a successful business, by being business minded but balancing this with architectural flair and pragmatism. They believe this provides speedy, buildable planning approvals and pragmatic construction solutions, whilst achieving maximum value for their clients. They now have the requirement for an associate or senior associate to join their team.</p>
+                            <ul class="options">
+                                <li><a class="more" href="javascript:void(0)">Find out more</a>&#8226;<a class="apply" href="javascript:void(0)">Apply now</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="title" href="javascript:void(0)">Project Surveyor</a>
+                            <p class="details">Witney, Oxfordshire &#8226; Permanent &#8226; Up to £50,000 + Benefits</p>
+                            <p class="description">One of the UK’s leading home builders and timber systems manufacturers is looking to recruit a Project Surveyor. With developments across Scotland and the north west of England they design and build a wide range of residential homes for a range of customers from mews homes to family homes and luxury apartments.</p>
+                            <ul class="options">
+                                <li><a class="more" href="javascript:void(0)">Find out more</a>&#8226;<a class="apply" href="javascript:void(0)">Apply now</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section><!-- [end] featured section -->
+            <section class="section skyline"></section>
+            <section class="section companies">
+                <div class="container">
+                    <section class="info">
+                        <h2>We work with some great companies</h2>
+                        <p class="about"><!--Private Practices, Public Sector Authorities, Consultancies &amp; Housing Associations. Come see who we work with.-->Private Practices, Public Sector Authorities, Consultancies & Housing Associations. Come see who we work with.</p>
+                        <ul class="options">
+                            <li><a href="javascript:void(0)" class="see-all">See all of them</a>&#8226;<a href="javascript:void(0)" class="become-one">Become one of them</a></li>
+                        </ul>
+                        <h3>What do our clients &amp; partners say?</h3>
+                        <p class="testimonial">"Design Group 3 Architects have used the services of many recruitment consultants to assist in the expansion of our practice. We have found Hunter Dunning to be responsive to our recruitment needs and always willing to work hard on our behalf."</p>
+                        <p class="client">Nick Baker (Group Design Director)</p>
                     </section>
-                    <section class="category"></section>
+                    <section class="partners">
+                        <ul class="grid">
+                            <li><a href="javascript:void(0)"><span><img class="company-hgp" src="assets/images/homepage/hgp.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><span><img class="company-bondbryan" src="assets/images/homepage/bondbryan.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><span><img class="company-scottbrownrigg" src="assets/images/homepage/scottbrownrigg.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><span><img class="company-bailygarner" src="assets/images/homepage/bailygarner.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><span><img class="company-jmarchitects" src="assets/images/homepage/jmarchitects.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><span><img class="company-keppie" src="assets/images/homepage/keppie.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><span><img class="company-conran" src="assets/images/homepage/conran.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><span><img class="company-bellway" src="assets/images/homepage/bellway.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><span><img class="company-adamarchitecture" src="assets/images/homepage/adamarchitecture.png"></span></a></li>
+                        </ul>
+                    </section>
                 </div>
             </section>
+            <footer>
+                <div class="container">
+                    <section class="social">
+                        <ul class="follow">
+                            <li><a href="javascript:void(0)"><img src="assets/images/social-twitter.png"></a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/images/social-facebook.png"></a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/images/social-linkedin.png"></a></li>
+                        </ul>
+                        <p>&copy; 2011 HunterDunning Ltd. <a href="javascript:void(0)">Design &amp; Build by Hinge Ltd</a></p>
+                    </section>
+                    <section class="links">
+                        <nav class="footer-navigation">
+                            <ul>
+                                <li><a href="jobs.html">Architecture Jobs</a></li>
+                                <li><a href="javascript:void(0)">Terms &amp; Conditions</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)">Sitemap</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </footer>
         </div>
     </body>
 </html>

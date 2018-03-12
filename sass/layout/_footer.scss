@@ -1,3 +1,140 @@
 // -----------------------------------------------------------------------------
 // This file contains all Footer styling
 // -----------------------------------------------------------------------------
+
+.homepage
+{
+    footer:before
+    {
+        background-image: url(../images/homepage/footer-edges-home.png);
+    }
+}
+
+footer
+{
+    position: relative;
+    z-index: 0;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    background-image: url(../images/footer-background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    &:before
+    {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100px;
+        background-image: url(../images/footer-edges.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .container
+    {
+        width: 1250px !important;
+    }
+    
+    a
+    {
+        color: $white;
+    }
+    
+    .container
+    {
+        width: 1250px;
+    }
+    
+    .social
+    {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        
+        .follow
+        {
+            display: block;
+            margin-top: 52px;
+            margin-left: -25px;
+            
+            li
+            {
+                display: inline-block;
+                
+                img
+                {
+                    width: 33px;
+                }
+            }
+        }
+        
+        p
+        {
+            margin-top: 5px;
+            margin-left: -25px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: $white;
+            
+            a
+            {
+                margin-left: 4.5px;
+                border-bottom: 2px solid transparent;
+                padding-bottom: 3px;
+                transition: .3s ease-out;
+
+                &:hover
+                {
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid $white;
+                }
+            }
+        }
+    }
+    
+    .links
+    {
+        position: absolute;
+        right: -25px;
+        bottom: -1px;
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+        text-align: right;
+        
+        .footer-navigation
+        {
+            ul
+            {
+                li
+                {
+                    display: inline-block;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $white;
+                    padding-left: 14px;
+                    
+                    a
+                    {
+                        border-bottom: 2px solid transparent;
+                        padding-bottom: 3px;
+                        transition: .3s ease-out;
+                        
+                        &:hover
+                        {
+                            padding-bottom: 3px;
+                            border-bottom: 2px solid $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

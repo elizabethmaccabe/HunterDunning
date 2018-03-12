@@ -1,10 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Jobs - Hunter Dunning</title>
+        <title>Hunter Dunning</title>
         <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </head>
     <body>
-        
+        <div class="wrapper page">
+            <header>
+                <div class="container">
+                    <section class="logo">
+                        <a href="index.html"><img src="assets/images/logo-small.png"></a>
+                    </section><!-- [end] .logo -->
+                    <section class="navigation">
+                        <ul>
+                            <li>+44 (0) 1243 779789</li>
+                            <li><img class="triangle" src="assets/images/triangle-green.png"></li>
+                            <li><a class="nav-link" href="javascript:void(0)">Login</a></li>
+                            <li><img class="triangle" src="assets/images/triangle-green.png"></li>
+                            <li><a class="nav-link" href="jobs.html">Jobs</a></li>
+                            <li><a class="nav-link" href="employers.html">Employers</a></li>
+                            <li><a href="javascript:void(0)"><img class="open-nav" onclick="openNav()" src="assets/images/menu-hamburger.png"></a></li>
+                        </ul>
+                    </section>
+                    <section class="main-navigation">
+                        <div id="main-nav" class="overlay">
+                            <a href="javascript:void(0)" onclick="closeNav()"><span class="close-nav-container"><img class="close-nav" src="assets/images/cross.png"></span></a>
+                            <ul class="primary-nav-content">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="javascript:void(0)">Jobs</a></li>
+                                <li><a href="javascript:void(0)">Employers</a></li>
+                            </ul>
+                            <ul class="secondary-nav-content">
+                                <li><a href="javascript:void(0)">About Hunter Dunning</a></li>
+                                <li><a href="javascript:void(0)">Latest news</a></li>
+                                <li><a href="javascript:void(0)">Contact us</a></li>
+                                <li><a href="javascript:void(0)">Login to your account</a></li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </header>
+            <section class="section findjobs">
+                <div class="container">
+                    <section class="job-header">
+                        <ul>
+                            <li><h1>Find your ideal job</h1></li>
+                            <li><p>120 jobs found - Displaying results 1 - 20</p></li>
+                        </ul>
+                    </section>
+                    <section class="job-list">
+                        <ul>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title" href="javascript:void(0)">Architectural Technician / Technologist</a>
+                                    <p class="details">Westerham, Kent &#8226; Permanent &#8226; £32,000 - £40,000 + Benefits</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Project Architect</a>
+                                    <p class="details">Westerham, Kent &#8226; Permanent &#8226; Up to £42,500</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Junior Architectural Technician</a>
+                                    <p class="details">Worthing, West Sussex &#8226; Permanent &#8226; Competitive</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Architectural Technician Jobs</a>
+                                    <p class="details">Worthing, West Sussex &#8226; Permanent &#8226; Competitive</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Mid-Weight Interior Designer</a>
+                                    <p class="details">Southwark, London &#8226; Permanent &#8226; Circa £30,000 - £33,000</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Part II Architectural Assistant</a>
+                                    <p class="details">Putney, London &#8226; Permanent &#8226; £27,000 - £33,000 DOE</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Part II Architectural Assistant</a>
+                                    <p class="details">Winchester, Hampshire &#8226; Permanent &#8226; £22,000 - £25,000</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Revit Architect</a>
+                                    <p class="details">Southwark, London &#8226; Permanent &#8226; £32,000 - £40,000</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Senior Architect</a>
+                                    <p class="details">Ringwood, Hampshire &#8226; Permanent &#8226; £35,000 - £45,000</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Architectural Technician / Technologist</a>
+                                    <p class="details">Chelsea, London &#8226; Permanent &#8226; £35,000 - £40,000</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Senior Landscape Artist</a>
+                                    <p class="details">Brighton, East Sussex &#8226; Permanent &#8226; £42,000 - £50,000</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="job-info">
+                                    <a class="title">Architect</a>
+                                    <p class="details">Torquay, Devon &#8226; Permanent &#8226; £33,000 - £43,000</p>
+                                </div>
+                                <div class="job-more">
+                                    <a class="more" href="javascript:void(0)">Find out more</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <section class="pagination">
+                            <ul class="pages">
+                                <li class="previous">PREV</li>
+                                <li class="number active">1</li>
+                                <li class="number">2</li>
+                                <li class="number">3</li>
+                                <li class="number">4</li>
+                                <li class="number">5</li>
+                                <li class="next">NEXT</li>
+                            </ul>
+                        </section>
+                    </section>
+                    <section class="job-filter">
+                        <div class="filter">
+                            <h3>Filter the job list</h3>
+                            <form class="filter-form">
+                                <ul>
+                                    <li>
+                                        <div class="keywords">
+                                            <p>Keywords</p>
+                                            <input type="text" placeholder="Enter key search words">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="select">
+                                            <select>
+                                                <option selected disabled>Job type</option>
+                                                <option>Any</option>
+                                                <option>Contract/Temporary</option>
+                                                <option>Permanent</option>
+                                            </select>
+                                            <span><img src="assets/images/triangle-grey.png"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="select">
+                                            <select>
+                                                <option selected disabled>Category</option>
+                                                <option>Any</option>
+                                                <option>Architects</option>
+                                                <option>Architectural Assistants</option>
+                                                <option>Interior Designers</option>
+                                                <option>Landscape Design &amp; Planning</option>
+                                                <option>Other</option>
+                                                <option>Senior Appointments</option>
+                                                <option>Technical Coordinators/ Managers</option>
+                                                <option>Technicians/Technologists</option>
+                                            </select>
+                                            <span><img src="assets/images/triangle-grey.png"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="select">
+                                            <select>
+                                                <option selected disabled>Location</option>
+                                                <option>Any</option>
+                                                <option>East Anglia</option>
+                                                <option>East Midlands</option>
+                                                <option>Ireland</option>
+                                                <option>London</option>
+                                                <option>North</option>
+                                                <option>North East</option>
+                                                <option>North West</option>
+                                                <option>Norhern Ireland</option>
+                                                <option>Scotland</option>
+                                                <option>South East</option>
+                                                <option>South West</option>
+                                                <option>Wales</option>
+                                                <option>West Midlands</option>
+                                            </select>
+                                            <span><img src="assets/images/triangle-grey.png"></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button class="submit">Filter Results</button>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                    <section class="social">
+                        <ul class="follow">
+                            <li><a href="javascript:void(0)"><img src="assets/images/social-twitter.png"></a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/images/social-facebook.png"></a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/images/social-linkedin.png"></a></li>
+                        </ul>
+                        <p>&copy; 2011 HunterDunning Ltd. <a href="javascript:void(0)">Design &amp; Build by Hinge Ltd</a></p>
+                    </section>
+                    <section class="links">
+                        <nav class="footer-navigation">
+                            <ul>
+                                <li><a href="jobs.html">Architecture Jobs</a></li>
+                                <li><a href="javascript:void(0)">Terms &amp; Conditions</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)">Sitemap</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

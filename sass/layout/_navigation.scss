@@ -1,3 +1,132 @@
 // -----------------------------------------------------------------------------
 // This file contains all Navigation styling
 // -----------------------------------------------------------------------------
+
+.page
+{
+    .main-navigation
+    {
+        .close-nav-container
+        {
+            position: absolute;
+            top: 38px;
+            right: 70px;
+            width: 42px;
+            height: 30px;
+            border: 2px solid $white;
+            text-align: center;
+            transition: 0.3s ease-out;
+
+            &:hover
+            {
+                background-color: $black;
+                border: 2px solid $black;
+            }
+
+            .close-nav
+            {
+                padding-top: 5px;
+                width: 16px;
+            }
+        }
+    }
+}
+
+.main-navigation
+{
+    .close-nav-container
+    {
+        position: absolute;
+        top: 86px;
+        right: 70px;
+        width: 42px;
+        height: 30px;
+        border: 2px solid $white;
+        text-align: center;
+        transition: 0.3s ease-out;
+        
+        &:hover
+        {
+            background-color: $black;
+            border: 2px solid $black;
+        }
+        
+        .close-nav
+        {
+            padding-top: 5px;
+            width: 16px;
+        }
+    }
+    
+    .overlay
+    {
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 0;
+        background-image: url(../images/menu-background.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        overflow-x: hidden;
+        transition: 0.5s;
+        
+        .primary-nav-content
+        {
+            position: relative;
+            top: 20%;
+            width: 100%;
+            text-align: center;
+            
+            &:after
+            {
+                width: 150px;
+                height: 1px;
+                background-color: $white;
+                content: "";
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 15px;
+            }
+            
+            a
+            {
+                font-family: FuturaLight;
+                font-size: 80px;
+                line-height: 134px;
+                color: $white;
+                transition: 0.3s ease-out;
+                
+                &:hover
+                {
+                    color: $black;
+                }
+            }
+        }
+        
+        .secondary-nav-content
+        {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            padding-bottom: 17%;
+            
+            a
+            {
+                font-family: FuturaLight;
+                font-size: 30px;
+                line-height: 60px;
+                color: $white;
+                transition: 0.3s ease-out;
+                
+                &:hover
+                {
+                    color: $black;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,125 @@
 // -----------------------------------------------------------------------------
 // This file contains all Header styling
 // -----------------------------------------------------------------------------
+
+// [START] Header Styling //
+.page
+{
+    header
+    {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: -10px;
+        display: block;
+        padding-top: 22px;
+        width: 100%;
+        height: 104px;
+        background-color: $white;
+
+        &:after
+        {
+            width: 98.6%;
+            height: 2px;
+            content: "";
+            display: block;
+            background-color: $pink;
+            margin-left: 20px;
+        }
+
+        .container
+        {
+            width: 1250px;
+        }
+
+        .logo
+        {
+            position: relative;
+            z-index: 2;
+            top: 5px;
+            left: -15px;
+            display: inline-block;
+            width: 155px;
+
+            img
+            {
+                width: 100%;
+            }
+        }
+
+        // [START] Navigation Styling //
+        .navigation
+        {
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            right: 5px;
+            display: inline-block;
+            width: 100%;
+            text-align: right;
+
+            ul
+            {
+                display: block;
+                list-style: none;
+                margin-top: 14px;
+
+                li:last-child
+                {
+                    margin-left: 2px;
+                }
+
+                li
+                {
+                    display: inline-block;
+                    padding-left: 1.7%;
+
+                    a
+                    {
+                        color: $black;
+                    }
+
+                    .open-nav
+                    {
+                        position: absolute;
+                        top: 6px;
+                        right: -40px;
+                        transition: .3s ease-out;
+                        border: solid 2px $black;
+                        width: 42px;
+                        height: 30px;
+                        padding: 6px 7px;
+
+                        &:hover
+                        {
+                            border: solid 2px $white;
+                            background-color: $white;
+                            filter: invert(100%);
+                        }
+                    }
+
+                    .nav-link
+                    {
+                        transition: .3s ease-out;
+                        border-bottom: solid 2px transparent;
+                        padding-bottom: 5px;
+
+                        &:hover
+                        {
+                            border-bottom: 2px solid $black;
+                            padding-bottom: 5px;
+                        }
+                    }
+
+                    .triangle
+                    {
+                        margin-bottom: 4px;
+                        width: 8px;
+                    }
+                }
+            }
+        }
+        // [END] .navigation //
+    }
+    // [END] header //
+}
