@@ -129,6 +129,33 @@
     // [END] header //
 }
 
+@media only screen and (min-width : 580px) and (max-width : 800px)
+{
+    .jobs-page, .employers-page
+    {
+        header
+        {
+            width: 100%;
+            
+            .container
+            {
+                margin-left: 80px;
+                width: 80%;
+            }
+            
+            .navigation
+            {
+                right: 10px;
+                
+                li:first-child, li:nth-child(2)
+                {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width : 400px)
 {
     .jobs-page, .employers-page

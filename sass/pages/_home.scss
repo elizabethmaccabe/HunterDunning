@@ -677,6 +677,169 @@
 }
 // [end] .homepage //
 
+@media only screen and (min-width : 580px) and (max-width : 800px)
+{
+    .home-page
+    {
+        .container
+        {
+            margin-left: 50px;
+            width: 90%;
+        }
+        
+        header
+        {
+            width: 100%;
+            
+            .container
+            {
+                margin-left: 80px;
+                width: 80%;
+            }
+            
+            .navigation
+            {
+                right: 10px;
+                
+                li:first-child, li:nth-child(2)
+                {
+                    display: none;
+                }
+            }
+        }
+        
+        .masthead
+        {
+            .search
+            {
+                h1
+                {
+                    width: 100% !important;
+                }
+                
+                .form-fields
+                {
+                    input
+                    {
+                        width: 650px !important;
+                    }
+                    
+                    li
+                    {
+                        display: list-item;
+                    }
+                    
+                    .dropdown
+                    {
+                        position: absolute;
+                        width: 650px !important;
+                    }
+                    
+                    .dropdown-type {left: 0 !important; top: 70px !important;}
+                    
+                    .dropdown-category {left: 0 !important; top: 140px !important;}
+                    
+                    .dropdown-location {left: 0 !important; top: 210px !important;}
+                    
+                    .search-field
+                    {
+                        width: 650px !important;
+                        left: 0 !important;
+                        top: 280px !important;
+                        z-index: -1 !important;
+                        
+                        .search-icon
+                        {
+                            position: absolute;
+                            top: 13px !important;
+                            left: 320px !important;
+                        }
+                    }
+                }
+            }
+            
+            .focus
+            {
+                margin-top: 350px !important;
+                padding-bottom: 10px !important;
+                
+                .category
+                {
+                    ul
+                    {
+                        column-count: 1;
+                    }
+                }
+                
+                .region
+                {
+                    margin-left: 30px;
+                    
+                    ul
+                    {
+                        column-count: 2;
+                    }
+                }
+            }
+        }
+        
+        .featured
+        {                
+            .jobs
+            {
+                display: block;
+                width: 100%;
+
+                li
+                {
+                    display: block !important;
+                    width: 100% !important;
+                }
+            }
+        }
+        
+        .skyline
+        {
+            left: 0px;
+            
+            &:after
+            {
+                background-image: none;
+            }
+        }
+        
+        .companies
+        {
+            margin-top: -54px;
+            padding-bottom: 80px;
+            
+            .info
+            {
+                display: block;
+                width: 100%;
+                padding-top: 0;
+            }
+            
+            .partners
+            {
+                margin-top: 20px;
+                margin-left: 20px;
+                
+                .grid
+                {
+                    column-count: 3;
+                    min-width: 600px;
+                    
+                    span
+                    {
+                        width: 201px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width : 400px)
 {
     .home-page
@@ -787,7 +950,6 @@
                     {
                         position: absolute;
                         width: 300px !important;
-                        
                         
                         .dropdown-content
                         {

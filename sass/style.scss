@@ -399,7 +399,7 @@
         margin-top: 36px;
     }
 
-    P:nth-of-type(3)
+    P:last-of-type
     {
         margin-top: 30px;
         width: 50%;
@@ -706,6 +706,127 @@
 }
 // [END] Employers Page //
 
+@media only screen and (min-width : 580px) and (max-width : 800px)
+{
+    .employers-page
+    {
+        .container
+        {
+            margin-left: 50px;
+            width: 87%;
+        }
+        
+        .content
+        {
+            padding-bottom: 0px !important;
+            
+            h2
+            {
+                width: 100%;
+            }
+            
+            .building-container
+            {
+                top: 466px !important;
+            }
+        }
+        
+        .companies
+        {
+            h2
+            {
+                margin-top: -30px !important;
+            }
+            
+            .options
+            {
+                .see-all {padding-right: 2%;}
+                .become-one {padding-left: 2%;}
+            }
+            
+            .partners
+            {
+                margin-left: 10px;
+
+                .grid
+                {
+                    column-count: 2;
+
+                    span
+                    {
+                        width: 300px;
+                        margin-bottom: 10px;
+                        margin-left: 1px;
+                    }
+                }
+            }
+        }
+        
+        .testimonials
+        {
+            h2
+            {
+                width: 100%;
+            }
+            
+            .paginator
+            {
+                display: none;
+            }
+        }
+    }
+    
+    .jobs-page
+    {
+        .container
+        {
+            margin-left: 50px;
+            width: 87%;
+        }
+        
+        .jobs
+        {
+            padding-bottom: 0px;
+            
+            .job-find
+            {
+                p
+                {
+                    top: 80px;
+                    left: 0;
+                }
+                
+                ul
+                {
+                    display: block;
+                    vertical-align: top;
+
+                    li
+                    {
+                        display: block;
+                    }
+                }
+            }
+            
+            .job-list
+            {
+                width: 100%;
+                margin-top: 30px;
+            }
+            
+            .pagination
+            {
+                padding-bottom: 80px;
+            }
+            
+            .job-filter
+            {
+                display: none;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width : 400px)
 {
     .jobs-page
@@ -817,19 +938,7 @@
             }
         }
     }
-}
-
-@media only screen and (min-width : 580px) and (max-width : 800px)
-{
-    .employers-page
-    {
-        
-    }
-}
-
-
-@media only screen and (max-width : 400px)
-{
+    
     .employers-page
     {
         .container
@@ -847,7 +956,7 @@
                 width: 100%;
             }
 
-            P:nth-of-type(3)
+            P:last-of-type
             {
                 margin-top: 30px;
                 width: 100%;

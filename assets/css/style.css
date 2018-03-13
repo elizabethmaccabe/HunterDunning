@@ -554,33 +554,42 @@ footer {
           padding-bottom: 3px;
           border-bottom: 2px solid #FFFFFF; }
 
+@media only screen and (min-width: 580px) and (max-width: 800px) {
+  footer .container {
+    margin-left: 80px !important;
+    width: 80% !important; }
+  footer .social p {
+    width: 80%; }
+  footer .links {
+    width: 60%; } }
+
 @media only screen and (max-width: 400px) {
   footer footer:before {
     background-position: top; }
   footer .container {
     width: 85% !important; }
-    footer .container .social {
-      position: relative;
-      left: 10px;
-      display: block;
-      padding-top: 20px;
-      width: 100%;
-      text-align: center; }
-      footer .container .social p {
-        width: 80%;
-        margin-left: 20px;
-        line-height: 17px; }
-      footer .container .social .follow li {
-        padding-left: 5px; }
-    footer .container .links {
-      position: relative;
-      display: block;
-      width: 100%;
-      margin-top: 20px;
-      text-align: center; }
-      footer .container .links .footer-navigation {
-        margin-left: -50px;
-        line-height: 20px; } }
+  footer .social {
+    position: relative;
+    left: 10px;
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center; }
+    footer .social p {
+      width: 80%;
+      margin-left: 20px;
+      line-height: 17px; }
+    footer .social .follow li {
+      padding-left: 5px; }
+  footer .links {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center; }
+    footer .links .footer-navigation {
+      margin-left: -50px;
+      line-height: 20px; } }
 
 .jobs-page header, .employers-page header {
   position: fixed;
@@ -657,6 +666,17 @@ footer {
           width: 8px; }
   .jobs-page header .mobile-nav, .employers-page header .mobile-nav {
     display: none; }
+
+@media only screen and (min-width: 580px) and (max-width: 800px) {
+  .jobs-page header, .employers-page header {
+    width: 100%; }
+    .jobs-page header .container, .employers-page header .container {
+      margin-left: 80px;
+      width: 80%; }
+    .jobs-page header .navigation, .employers-page header .navigation {
+      right: 10px; }
+      .jobs-page header .navigation li:first-child, .jobs-page header .navigation li:nth-child(2), .employers-page header .navigation li:first-child, .employers-page header .navigation li:nth-child(2) {
+        display: none; } }
 
 @media only screen and (max-width: 400px) {
   .jobs-page header, .employers-page header {
@@ -1280,6 +1300,84 @@ footer {
           height: 47px;
           margin-top: 58px; }
 
+@media only screen and (min-width: 580px) and (max-width: 800px) {
+  .home-page .container {
+    margin-left: 50px;
+    width: 90%; }
+  .home-page header {
+    width: 100%; }
+    .home-page header .container {
+      margin-left: 80px;
+      width: 80%; }
+    .home-page header .navigation {
+      right: 10px; }
+      .home-page header .navigation li:first-child, .home-page header .navigation li:nth-child(2) {
+        display: none; }
+  .home-page .masthead .search h1 {
+    width: 100% !important; }
+  .home-page .masthead .search .form-fields input {
+    width: 650px !important; }
+  .home-page .masthead .search .form-fields li {
+    display: list-item; }
+  .home-page .masthead .search .form-fields .dropdown {
+    position: absolute;
+    width: 650px !important; }
+  .home-page .masthead .search .form-fields .dropdown-type {
+    left: 0 !important;
+    top: 70px !important; }
+  .home-page .masthead .search .form-fields .dropdown-category {
+    left: 0 !important;
+    top: 140px !important; }
+  .home-page .masthead .search .form-fields .dropdown-location {
+    left: 0 !important;
+    top: 210px !important; }
+  .home-page .masthead .search .form-fields .search-field {
+    width: 650px !important;
+    left: 0 !important;
+    top: 280px !important;
+    z-index: -1 !important; }
+    .home-page .masthead .search .form-fields .search-field .search-icon {
+      position: absolute;
+      top: 13px !important;
+      left: 320px !important; }
+  .home-page .masthead .focus {
+    margin-top: 350px !important;
+    padding-bottom: 10px !important; }
+    .home-page .masthead .focus .category ul {
+      -webkit-column-count: 1;
+      column-count: 1; }
+    .home-page .masthead .focus .region {
+      margin-left: 30px; }
+      .home-page .masthead .focus .region ul {
+        -webkit-column-count: 2;
+        column-count: 2; }
+  .home-page .featured .jobs {
+    display: block;
+    width: 100%; }
+    .home-page .featured .jobs li {
+      display: block !important;
+      width: 100% !important; }
+  .home-page .skyline {
+    left: 0px; }
+    .home-page .skyline:after {
+      background-image: none; }
+  .home-page .companies {
+    margin-top: -54px;
+    padding-bottom: 80px; }
+    .home-page .companies .info {
+      display: block;
+      width: 100%;
+      padding-top: 0; }
+    .home-page .companies .partners {
+      margin-top: 20px;
+      margin-left: 20px; }
+      .home-page .companies .partners .grid {
+        -webkit-column-count: 3;
+        column-count: 3;
+        min-width: 600px; }
+        .home-page .companies .partners .grid span {
+          width: 201px; } }
+
 @media only screen and (max-width: 400px) {
   .home-page .container {
     margin-left: 25px;
@@ -1644,7 +1742,7 @@ footer {
     font-size: 18px; }
   .content P:nth-of-type(2) {
     margin-top: 36px; }
-  .content P:nth-of-type(3) {
+  .content P:last-of-type {
     margin-top: 30px;
     width: 50%; }
   .content .building-container {
@@ -1873,6 +1971,56 @@ footer {
         margin-right: 15px;
         margin-left: 75px; }
 
+@media only screen and (min-width: 580px) and (max-width: 800px) {
+  .employers-page .container {
+    margin-left: 50px;
+    width: 87%; }
+  .employers-page .content {
+    padding-bottom: 0px !important; }
+    .employers-page .content h2 {
+      width: 100%; }
+    .employers-page .content .building-container {
+      top: 466px !important; }
+  .employers-page .companies h2 {
+    margin-top: -30px !important; }
+  .employers-page .companies .options .see-all {
+    padding-right: 2%; }
+  .employers-page .companies .options .become-one {
+    padding-left: 2%; }
+  .employers-page .companies .partners {
+    margin-left: 10px; }
+    .employers-page .companies .partners .grid {
+      -webkit-column-count: 2;
+      column-count: 2; }
+      .employers-page .companies .partners .grid span {
+        width: 300px;
+        margin-bottom: 10px;
+        margin-left: 1px; }
+  .employers-page .testimonials h2 {
+    width: 100%; }
+  .employers-page .testimonials .paginator {
+    display: none; }
+  .jobs-page .container {
+    margin-left: 50px;
+    width: 87%; }
+  .jobs-page .jobs {
+    padding-bottom: 0px; }
+    .jobs-page .jobs .job-find p {
+      top: 80px;
+      left: 0; }
+    .jobs-page .jobs .job-find ul {
+      display: block;
+      vertical-align: top; }
+      .jobs-page .jobs .job-find ul li {
+        display: block; }
+    .jobs-page .jobs .job-list {
+      width: 100%;
+      margin-top: 30px; }
+    .jobs-page .jobs .pagination {
+      padding-bottom: 80px; }
+    .jobs-page .jobs .job-filter {
+      display: none; } }
+
 @media only screen and (max-width: 400px) {
   .jobs-page .container {
     margin-left: 25px;
@@ -1920,9 +2068,7 @@ footer {
       .jobs-page .jobs .pagination .next {
         padding: 7px 10px 6px 10px !important; }
     .jobs-page .jobs .job-filter {
-      display: none; } }
-
-@media only screen and (max-width: 400px) {
+      display: none; }
   .employers-page .container {
     margin-left: 25px;
     width: 87%; }
@@ -1930,7 +2076,7 @@ footer {
     padding-bottom: 0px !important; }
     .employers-page .content h2 {
       width: 100%; }
-    .employers-page .content P:nth-of-type(3) {
+    .employers-page .content P:last-of-type {
       margin-top: 30px;
       width: 100%; }
     .employers-page .content .building-container {
