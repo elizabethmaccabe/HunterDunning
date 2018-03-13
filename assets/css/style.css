@@ -474,8 +474,8 @@ ul {
   list-style: none; }
 
 /* Layout Related */
-.homepage footer:before {
-  background-image: url(../images/homepage/footer-edges-home.png); }
+.home-page footer:before, .employers-page footer:before {
+  background-image: url(../images/footer-edges-grey.png); }
 
 footer {
   position: relative;
@@ -485,7 +485,7 @@ footer {
   padding-bottom: 40px;
   background-image: url(../images/footer-background.png);
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
   footer:before {
     content: "";
     position: absolute;
@@ -494,15 +494,14 @@ footer {
     display: block;
     width: 100%;
     height: 100px;
-    background-image: url(../images/footer-edges.png);
+    background-image: url(../images/footer-edges-white.png);
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: 100%; }
+    background-size: cover; }
   footer .container {
     width: 1250px !important; }
   footer a {
     color: #FFFFFF; }
-  footer .container {
-    width: 1250px; }
   footer .social {
     display: inline-block;
     vertical-align: top;
@@ -555,7 +554,35 @@ footer {
           padding-bottom: 3px;
           border-bottom: 2px solid #FFFFFF; }
 
-.page header {
+@media only screen and (max-width: 400px) {
+  footer footer:before {
+    background-position: top; }
+  footer .container {
+    width: 85% !important; }
+    footer .container .social {
+      position: relative;
+      left: 10px;
+      display: block;
+      padding-top: 20px;
+      width: 100%;
+      text-align: center; }
+      footer .container .social p {
+        width: 80%;
+        margin-left: 20px;
+        line-height: 17px; }
+      footer .container .social .follow li {
+        padding-left: 5px; }
+    footer .container .links {
+      position: relative;
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      text-align: center; }
+      footer .container .links .footer-navigation {
+        margin-left: -50px;
+        line-height: 20px; } }
+
+.jobs-page header, .employers-page header {
   position: fixed;
   z-index: 2;
   top: 0;
@@ -565,25 +592,25 @@ footer {
   width: 100%;
   height: 104px;
   background-color: #FFFFFF; }
-  .page header:after {
+  .jobs-page header:after, .employers-page header:after {
     width: 98.6%;
     height: 2px;
     content: "";
     display: block;
     background-color: #B11486;
     margin-left: 20px; }
-  .page header .container {
+  .jobs-page header .container, .employers-page header .container {
     width: 1250px; }
-  .page header .logo {
+  .jobs-page header .logo, .employers-page header .logo {
     position: relative;
     z-index: 2;
     top: 5px;
     left: -15px;
     display: inline-block;
     width: 155px; }
-    .page header .logo img {
+    .jobs-page header .logo img, .employers-page header .logo img {
       width: 100%; }
-  .page header .navigation {
+  .jobs-page header .navigation, .employers-page header .navigation {
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -591,18 +618,18 @@ footer {
     display: inline-block;
     width: 100%;
     text-align: right; }
-    .page header .navigation ul {
+    .jobs-page header .navigation ul, .employers-page header .navigation ul {
       display: block;
       list-style: none;
       margin-top: 14px; }
-      .page header .navigation ul li:last-child {
+      .jobs-page header .navigation ul li:last-child, .employers-page header .navigation ul li:last-child {
         margin-left: 2px; }
-      .page header .navigation ul li {
+      .jobs-page header .navigation ul li, .employers-page header .navigation ul li {
         display: inline-block;
         padding-left: 1.7%; }
-        .page header .navigation ul li a {
+        .jobs-page header .navigation ul li a, .employers-page header .navigation ul li a {
           color: #000000; }
-        .page header .navigation ul li .open-nav {
+        .jobs-page header .navigation ul li .open-nav, .employers-page header .navigation ul li .open-nav {
           position: absolute;
           top: 6px;
           right: -40px;
@@ -612,24 +639,72 @@ footer {
           width: 42px;
           height: 30px;
           padding: 6px 7px; }
-          .page header .navigation ul li .open-nav:hover {
+          .jobs-page header .navigation ul li .open-nav:hover, .employers-page header .navigation ul li .open-nav:hover {
             border: solid 2px #FFFFFF;
             background-color: #FFFFFF;
             -webkit-filter: invert(100%);
             filter: invert(100%); }
-        .page header .navigation ul li .nav-link {
+        .jobs-page header .navigation ul li .nav-link, .employers-page header .navigation ul li .nav-link {
           -webkit-transition: .3s ease-out;
           transition: .3s ease-out;
           border-bottom: solid 2px transparent;
           padding-bottom: 5px; }
-          .page header .navigation ul li .nav-link:hover {
+          .jobs-page header .navigation ul li .nav-link:hover, .employers-page header .navigation ul li .nav-link:hover {
             border-bottom: 2px solid #000000;
             padding-bottom: 5px; }
-        .page header .navigation ul li .triangle {
+        .jobs-page header .navigation ul li .triangle, .employers-page header .navigation ul li .triangle {
           margin-bottom: 4px;
           width: 8px; }
+  .jobs-page header .mobile-nav, .employers-page header .mobile-nav {
+    display: none; }
 
-.page .main-navigation .close-nav-container {
+@media only screen and (max-width: 400px) {
+  .jobs-page header, .employers-page header {
+    width: 100%; }
+    .jobs-page header .container, .employers-page header .container {
+      margin-left: 50px;
+      width: 85%; }
+    .jobs-page header .logo, .employers-page header .logo {
+      left: -10px !important;
+      width: 155px; }
+    .jobs-page header .navigation, .employers-page header .navigation {
+      display: none !important; }
+    .jobs-page header .mobile-nav, .employers-page header .mobile-nav {
+      display: inline-block;
+      position: relative; }
+      .jobs-page header .mobile-nav ul, .employers-page header .mobile-nav ul {
+        display: block; }
+        .jobs-page header .mobile-nav ul li, .employers-page header .mobile-nav ul li {
+          display: inline-block; }
+        .jobs-page header .mobile-nav ul .open-nav, .employers-page header .mobile-nav ul .open-nav {
+          position: absolute;
+          top: -17px;
+          right: -150px;
+          -webkit-transition: .3s ease-out;
+          transition: .3s ease-out;
+          border: solid 2px #000000;
+          width: 42px;
+          height: 30px;
+          padding: 6px 7px; }
+          .jobs-page header .mobile-nav ul .open-nav:hover, .employers-page header .mobile-nav ul .open-nav:hover {
+            border: solid 2px #FFFFFF;
+            background-color: #FFFFFF;
+            -webkit-filter: invert(100%);
+            filter: invert(100%); }
+        .jobs-page header .mobile-nav ul .login-container, .employers-page header .mobile-nav ul .login-container {
+          position: absolute;
+          top: -17px;
+          right: -90px;
+          width: 42px;
+          height: 30px;
+          border: 2px solid #000000; }
+          .jobs-page header .mobile-nav ul .login-container img, .employers-page header .mobile-nav ul .login-container img {
+            position: absolute;
+            top: 4px;
+            left: 9px;
+            width: 20px; } }
+
+.jobs-page .main-navigation .close-nav-container, .employers-page .main-navigation .close-nav-container {
   position: absolute;
   top: 38px;
   right: 70px;
@@ -639,10 +714,10 @@ footer {
   text-align: center;
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out; }
-  .page .main-navigation .close-nav-container:hover {
+  .jobs-page .main-navigation .close-nav-container:hover, .employers-page .main-navigation .close-nav-container:hover {
     background-color: #000000;
     border: 2px solid #000000; }
-  .page .main-navigation .close-nav-container .close-nav {
+  .jobs-page .main-navigation .close-nav-container .close-nav, .employers-page .main-navigation .close-nav-container .close-nav {
     padding-top: 5px;
     width: 16px; }
 
@@ -715,25 +790,51 @@ footer {
       .main-navigation .overlay .secondary-nav-content a:hover {
         color: #000000; }
 
+@media only screen and (max-width: 400px) {
+  .jobs-page .main-navigation .close-nav-container, .employers-page .main-navigation .close-nav-container {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    width: 42px;
+    height: 30px;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out; }
+    .jobs-page .main-navigation .close-nav-container:hover, .employers-page .main-navigation .close-nav-container:hover {
+      background-color: #000000;
+      border: 2px solid #000000; }
+    .jobs-page .main-navigation .close-nav-container .close-nav, .employers-page .main-navigation .close-nav-container .close-nav {
+      padding-top: 5px;
+      width: 16px; }
+  .overlay .primary-nav-content:after {
+    margin-top: 50px !important; }
+  .overlay .primary-nav-content a {
+    font-size: 60px !important;
+    line-height: 80px !important; }
+  .overlay .secondary-nav-content a {
+    font-size: 25px !important;
+    line-height: 40px !important; } }
+
 /* Components */
 /* Page Specific */
-.homepage header {
+.home-page header {
   position: absolute;
   top: 70px;
   left: -10px;
   display: block;
   width: 100%; }
-  .homepage header .container {
+  .home-page header .container {
     width: 1250px; }
-  .homepage header .logo {
+  .home-page header .logo {
     position: relative;
     z-index: 2;
     left: -15px;
     display: inline-block;
     width: 185px; }
-    .homepage header .logo img {
+    .home-page header .logo img {
       width: 100%; }
-  .homepage header .navigation {
+  .home-page header .navigation {
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -741,18 +842,18 @@ footer {
     display: inline-block;
     width: 100%;
     text-align: right; }
-    .homepage header .navigation ul {
+    .home-page header .navigation ul {
       display: block;
       list-style: none;
       margin-top: 14px; }
-      .homepage header .navigation ul li:last-child {
+      .home-page header .navigation ul li:last-child {
         margin-left: 2px; }
-      .homepage header .navigation ul li {
+      .home-page header .navigation ul li {
         display: inline-block;
         padding-left: 1.7%; }
-        .homepage header .navigation ul li a {
+        .home-page header .navigation ul li a {
           color: #000000; }
-        .homepage header .navigation ul li .open-nav {
+        .home-page header .navigation ul li .open-nav {
           position: absolute;
           top: 6px;
           right: -40px;
@@ -762,24 +863,26 @@ footer {
           width: 42px;
           height: 30px;
           padding: 6px 7px; }
-          .homepage header .navigation ul li .open-nav:hover {
+          .home-page header .navigation ul li .open-nav:hover {
             border: solid 2px #FFFFFF;
             background-color: #FFFFFF;
             -webkit-filter: invert(100%);
             filter: invert(100%); }
-        .homepage header .navigation ul li .nav-link {
+        .home-page header .navigation ul li .nav-link {
           -webkit-transition: .3s ease-out;
           transition: .3s ease-out;
           border-bottom: solid 2px transparent;
           padding-bottom: 5px; }
-          .homepage header .navigation ul li .nav-link:hover {
+          .home-page header .navigation ul li .nav-link:hover {
             border-bottom: 2px solid #000000;
             padding-bottom: 5px; }
-        .homepage header .navigation ul li .triangle {
+        .home-page header .navigation ul li .triangle {
           margin-bottom: 4px;
           width: 8px; }
+  .home-page header .mobile-nav {
+    display: none; }
 
-.homepage .masthead {
+.home-page .masthead {
   position: relative;
   z-index: 0;
   padding-top: 243px;
@@ -787,7 +890,7 @@ footer {
   background-image: url(../images/homepage/masthead.png);
   background-size: cover;
   background-position: bottom; }
-  .homepage .masthead:after {
+  .home-page .masthead:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -799,60 +902,59 @@ footer {
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: 100%; }
-  .homepage .masthead .search {
+  .home-page .masthead .search {
     display: block; }
-    .homepage .masthead .search .job-search {
+    .home-page .masthead .search .job-search {
       display: block; }
-      .homepage .masthead .search .job-search h1 {
+      .home-page .masthead .search .job-search h1 {
         display: block;
         margin-top: 3px;
         width: 60%; }
-      .homepage .masthead .search .job-search .form-fields {
+      .home-page .masthead .search .job-search .form-fields {
         position: relative;
         display: block;
         margin-top: 34px; }
-        .homepage .masthead .search .job-search .form-fields li {
+        .home-page .masthead .search .job-search .form-fields li {
           display: inline-block; }
-        .homepage .masthead .search .job-search .form-fields input {
+        .home-page .masthead .search .job-search .form-fields input {
           font-size: 18px;
-          font-size: 1.125rem;
           border: none;
           padding: 5px 0px 0px 25px;
           width: 300px;
           height: 55px;
           vertical-align: top;
           background-color: #FFFFFF; }
-          .homepage .masthead .search .job-search .form-fields input:focus {
+          .home-page .masthead .search .job-search .form-fields input:focus {
             outline: none; }
-        .homepage .masthead .search .job-search .form-fields ::-webkit-input-placeholder {
+        .home-page .masthead .search .job-search .form-fields ::-webkit-input-placeholder {
           font-family: GothamLight;
           color: #464646; }
-        .homepage .masthead .search .job-search .form-fields :-ms-input-placeholder {
+        .home-page .masthead .search .job-search .form-fields :-ms-input-placeholder {
           font-family: GothamLight;
           color: #464646; }
-        .homepage .masthead .search .job-search .form-fields ::-ms-input-placeholder {
+        .home-page .masthead .search .job-search .form-fields ::-ms-input-placeholder {
           font-family: GothamLight;
           color: #464646; }
-        .homepage .masthead .search .job-search .form-fields ::placeholder {
+        .home-page .masthead .search .job-search .form-fields ::placeholder {
           font-family: GothamLight;
           color: #464646; }
-        .homepage .masthead .search .job-search .form-fields .dropdown {
+        .home-page .masthead .search .job-search .form-fields .dropdown {
           position: absolute;
           width: 150px;
           height: 55px;
           background-color: #FFFFFF;
           padding-top: 20px;
           padding-left: 25px; }
-          .homepage .masthead .search .job-search .form-fields .dropdown a {
+          .home-page .masthead .search .job-search .form-fields .dropdown a {
             font-family: GothamLight;
             color: #464646; }
-          .homepage .masthead .search .job-search .form-fields .dropdown span {
+          .home-page .masthead .search .job-search .form-fields .dropdown span {
             position: absolute;
             right: 21px;
             top: 19px; }
-            .homepage .masthead .search .job-search .form-fields .dropdown span img {
+            .home-page .masthead .search .job-search .form-fields .dropdown span img {
               width: 10px; }
-          .homepage .masthead .search .job-search .form-fields .dropdown .dropdown-content {
+          .home-page .masthead .search .job-search .form-fields .dropdown .dropdown-content {
             display: none;
             margin: 25px 0px 0px -25px;
             width: 250px;
@@ -861,25 +963,25 @@ footer {
             border-bottom: 3px solid #B11486;
             background-color: #FFFFFF;
             line-height: normal; }
-            .homepage .masthead .search .job-search .form-fields .dropdown .dropdown-content li {
+            .home-page .masthead .search .job-search .form-fields .dropdown .dropdown-content li {
               display: list-item;
               padding-top: 20px; }
-              .homepage .masthead .search .job-search .form-fields .dropdown .dropdown-content li a {
+              .home-page .masthead .search .job-search .form-fields .dropdown .dropdown-content li a {
                 font-family: GothamBook; }
-              .homepage .masthead .search .job-search .form-fields .dropdown .dropdown-content li a:hover {
+              .home-page .masthead .search .job-search .form-fields .dropdown .dropdown-content li a:hover {
                 color: #B11486; }
-            .homepage .masthead .search .job-search .form-fields .dropdown .dropdown-content li:last-of-type {
+            .home-page .masthead .search .job-search .form-fields .dropdown .dropdown-content li:last-of-type {
               padding-bottom: 20px; }
-        .homepage .masthead .search .job-search .form-fields .dropdown-type {
+        .home-page .masthead .search .job-search .form-fields .dropdown-type {
           position: absolute;
           left: 311px; }
-        .homepage .masthead .search .job-search .form-fields .dropdown-category {
+        .home-page .masthead .search .job-search .form-fields .dropdown-category {
           position: absolute;
           left: 471px; }
-        .homepage .masthead .search .job-search .form-fields .dropdown-location {
+        .home-page .masthead .search .job-search .form-fields .dropdown-location {
           position: absolute;
           left: 631px; }
-        .homepage .masthead .search .job-search .form-fields .search-field {
+        .home-page .masthead .search .job-search .form-fields .search-field {
           position: absolute;
           right: 208px;
           height: 55px;
@@ -889,28 +991,33 @@ footer {
           -webkit-transition: .3s ease-out;
           transition: .3s ease-out;
           cursor: pointer; }
-          .homepage .masthead .search .job-search .form-fields .search-field:hover {
+          .home-page .masthead .search .job-search .form-fields .search-field:hover {
             -webkit-filter: invert(100%);
             filter: invert(100%);
             border: solid 2px transparent;
             background-color: #FFFFFF; }
-          .homepage .masthead .search .job-search .form-fields .search-field .search {
+          .home-page .masthead .search .job-search .form-fields .search-field .search {
             width: 23px;
             margin: 0 auto;
             margin-top: 1.5px;
             margin-left: 10px;
             border: none;
             background: none; }
-            .homepage .masthead .search .job-search .form-fields .search-field .search:focus {
+            .home-page .masthead .search .job-search .form-fields .search-field .search:focus {
               outline: none; }
-  .homepage .masthead .focus {
+            .home-page .masthead .search .job-search .form-fields .search-field .search .search-icon {
+              width: 23px;
+              position: absolute;
+              left: 35px;
+              top: 14px; }
+  .home-page .masthead .focus {
     margin-top: 122px;
     padding-bottom: 100px; }
-    .homepage .masthead .focus .category, .homepage .masthead .focus .region {
+    .home-page .masthead .focus .category, .home-page .masthead .focus .region {
       width: 47%;
       display: inline-block;
       vertical-align: top; }
-      .homepage .masthead .focus .category h2, .homepage .masthead .focus .region h2 {
+      .home-page .masthead .focus .category h2, .home-page .masthead .focus .region h2 {
         display: inline-block;
         margin-bottom: 34px;
         color: #000000;
@@ -919,42 +1026,42 @@ footer {
         font-weight: 400;
         letter-spacing: 1.3px;
         text-transform: uppercase; }
-      .homepage .masthead .focus .category ul, .homepage .masthead .focus .region ul {
+      .home-page .masthead .focus .category ul, .home-page .masthead .focus .region ul {
         margin-top: -8px;
         -webkit-column-count: 2;
         column-count: 2;
         -webkit-column-gap: 60px;
         column-gap: 60px; }
-        .homepage .masthead .focus .category ul li, .homepage .masthead .focus .region ul li {
+        .home-page .masthead .focus .category ul li, .home-page .masthead .focus .region ul li {
           color: #FFFFFF;
           width: 105%;
           line-height: 27px; }
-          .homepage .masthead .focus .category ul li a, .homepage .masthead .focus .region ul li a {
+          .home-page .masthead .focus .category ul li a, .home-page .masthead .focus .region ul li a {
             font-size: 14px;
             color: #FFFFFF;
             border-bottom: 2px solid transparent;
             padding-bottom: 5px;
             -webkit-transition: .3s ease-out;
             transition: .3s ease-out; }
-            .homepage .masthead .focus .category ul li a:hover, .homepage .masthead .focus .region ul li a:hover {
+            .home-page .masthead .focus .category ul li a:hover, .home-page .masthead .focus .region ul li a:hover {
               padding-bottom: 5px;
               border-bottom: 2px solid #FFFFFF; }
-    .homepage .masthead .focus .region {
+    .home-page .masthead .focus .region {
       margin-left: 12px;
       padding-left: 10px; }
-      .homepage .masthead .focus .region ul {
+      .home-page .masthead .focus .region ul {
         -webkit-column-count: 3;
         column-count: 3;
         -webkit-column-gap: 0px;
         column-gap: 0px; }
-        .homepage .masthead .focus .region ul li {
+        .home-page .masthead .focus .region ul li {
           width: 90%; }
 
-.homepage .featured {
+.home-page .featured {
   position: relative;
   z-index: 0;
   display: block; }
-  .homepage .featured h2 {
+  .home-page .featured h2 {
     font-family: FuturaBook;
     font-weight: 300;
     letter-spacing: 3.1px;
@@ -962,63 +1069,65 @@ footer {
     font-size: 24px;
     margin-top: -18px;
     text-transform: uppercase; }
-    .homepage .featured h2:after {
+    .home-page .featured h2:after {
       display: block;
       margin-top: 10px;
       width: 100px;
       height: 2px;
       content: "";
       background-color: #B11486; }
-  .homepage .featured .jobs li {
-    display: inline-block;
-    vertical-align: top;
-    padding-right: 4%;
-    width: 33%;
-    margin-top: 85px; }
-    .homepage .featured .jobs li .title {
-      font-family: FuturaBook;
-      color: #464646;
-      letter-spacing: 1.4px;
-      font-size: 17px;
-      text-transform: uppercase; }
-      .homepage .featured .jobs li .title:hover {
-        color: #B11486; }
-    .homepage .featured .jobs li .details {
-      color: #7B7B7B;
-      font-size: 14px;
-      margin-top: 20px; }
-    .homepage .featured .jobs li .description {
-      margin-top: 20px;
-      text-align: justify;
-      color: #464646;
-      font-size: 14px;
-      line-height: 25px; }
-    .homepage .featured .jobs li .options li {
+  .home-page .featured .jobs {
+    padding-top: 0px; }
+    .home-page .featured .jobs li {
       display: inline-block;
-      margin-top: 20px;
-      width: 100%;
-      color: #464646;
-      font-size: 14px; }
-      .homepage .featured .jobs li .options li a {
-        color: #B11486;
-        display: inline-block; }
-        .homepage .featured .jobs li .options li a:after {
-          content: "";
-          display: block;
-          width: 100%;
-          height: 2px;
-          background-color: #B11486;
-          margin-top: 3px; }
-        .homepage .featured .jobs li .options li a:hover {
-          color: #000000; }
-          .homepage .featured .jobs li .options li a:hover:after {
-            background-color: #000000; }
-      .homepage .featured .jobs li .options li .more {
-        padding-right: 3%; }
-      .homepage .featured .jobs li .options li .apply {
-        padding-left: 3%; }
+      vertical-align: top;
+      padding-right: 4%;
+      width: 33%;
+      margin-top: 85px; }
+      .home-page .featured .jobs li .title {
+        font-family: FuturaBook;
+        color: #464646;
+        letter-spacing: 1.4px;
+        font-size: 17px;
+        text-transform: uppercase; }
+        .home-page .featured .jobs li .title:hover {
+          color: #B11486; }
+      .home-page .featured .jobs li .details {
+        color: #7B7B7B;
+        font-size: 14px;
+        margin-top: 20px; }
+      .home-page .featured .jobs li .description {
+        margin-top: 20px;
+        text-align: justify;
+        color: #464646;
+        font-size: 14px;
+        line-height: 25px; }
+      .home-page .featured .jobs li .options li {
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        color: #464646;
+        font-size: 14px; }
+        .home-page .featured .jobs li .options li a {
+          color: #B11486;
+          display: inline-block; }
+          .home-page .featured .jobs li .options li a:after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #B11486;
+            margin-top: 3px; }
+          .home-page .featured .jobs li .options li a:hover {
+            color: #000000; }
+            .home-page .featured .jobs li .options li a:hover:after {
+              background-color: #000000; }
+        .home-page .featured .jobs li .options li .more {
+          padding-right: 3%; }
+        .home-page .featured .jobs li .options li .apply {
+          padding-left: 3%; }
 
-.homepage .skyline {
+.home-page .skyline {
   padding: 0px 0px 19px 0px;
   background-image: url(../images/homepage/skyline.png);
   height: 122px;
@@ -1026,7 +1135,7 @@ footer {
   background-size: 801px 122px;
   background-repeat: no-repeat;
   position: relative; }
-  .homepage .skyline:after {
+  .home-page .skyline:after {
     position: absolute;
     top: 110px;
     left: 0;
@@ -1037,17 +1146,18 @@ footer {
     background-repeat: no-repeat;
     background-size: 100% 100%; }
 
-.homepage .companies {
+.home-page .companies {
   position: relative;
   z-index: 0;
   background-color: #F5F5F5;
-  padding-bottom: 132px; }
-  .homepage .companies .info {
+  padding-bottom: 132px;
+  margin-top: -32px; }
+  .home-page .companies .info {
     padding-top: 57px;
     display: inline-block;
     vertical-align: top;
     width: 38.5%; }
-    .homepage .companies .info h2 {
+    .home-page .companies .info h2 {
       font-family: FuturaBook;
       font-weight: 300;
       letter-spacing: 3.5px;
@@ -1057,44 +1167,44 @@ footer {
       text-transform: uppercase;
       line-height: 31px;
       width: 93%; }
-      .homepage .companies .info h2:after {
+      .home-page .companies .info h2:after {
         display: block;
         margin-top: 21px;
         width: 100px;
         height: 2px;
         content: "";
         background-color: #B11486; }
-    .homepage .companies .info .about {
+    .home-page .companies .info .about {
       margin-top: 21px;
       font-size: 14px;
       line-height: 28px;
       color: #464646;
       width: 91%; }
-    .homepage .companies .info .options li {
+    .home-page .companies .info .options li {
       display: inline-block;
       margin-top: 17px;
       width: 100%;
       color: #464646;
       font-size: 14px; }
-      .homepage .companies .info .options li a {
+      .home-page .companies .info .options li a {
         color: #B11486;
         display: inline-block; }
-        .homepage .companies .info .options li a:after {
+        .home-page .companies .info .options li a:after {
           content: "";
           display: block;
           width: 100%;
           height: 2px;
           background-color: #B11486;
           margin-top: -1px; }
-        .homepage .companies .info .options li a:hover {
+        .home-page .companies .info .options li a:hover {
           color: #000000; }
-          .homepage .companies .info .options li a:hover:after {
+          .home-page .companies .info .options li a:hover:after {
             background-color: #000000; }
-      .homepage .companies .info .options li .see-all {
+      .home-page .companies .info .options li .see-all {
         padding-right: 2%; }
-      .homepage .companies .info .options li .become-one {
+      .home-page .companies .info .options li .become-one {
         padding-left: 2%; }
-    .homepage .companies .info h3 {
+    .home-page .companies .info h3 {
       margin-top: 51px;
       font-family: FuturaBook;
       font-weight: 300;
@@ -1102,77 +1212,206 @@ footer {
       text-transform: uppercase;
       letter-spacing: 1.14px;
       color: #464646; }
-    .homepage .companies .info .testimonial {
+    .home-page .companies .info .testimonial {
       margin-top: 18px;
       color: #7B7B7B;
       font-size: 14px;
       line-height: 28px; }
-    .homepage .companies .info .client {
+    .home-page .companies .info .client {
       margin-top: 15px;
       font-family: GothamMedium;
       text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 0.75px;
       color: #464646; }
-  .homepage .companies .partners {
+  .home-page .companies .partners {
     display: inline-block;
     padding-top: 34px;
     vertical-align: top;
     width: 54%;
-    margin-left: 5.9%; }
-    .homepage .companies .partners .grid {
+    margin-left: 5.9%;
+    margin-bottom: 60px; }
+    .home-page .companies .partners .grid {
       display: block;
       -webkit-column-count: 3;
       column-count: 3; }
-      .homepage .companies .partners .grid span {
+      .home-page .companies .partners .grid span {
         width: 201px;
         height: 164px;
         background-color: #FFFFFF;
         display: inline-block;
-        margin-bottom: 2px;
+        margin-bottom: 1px;
         margin-left: -6px;
         text-align: center; }
-        .homepage .companies .partners .grid span .company-hgp {
+        .home-page .companies .partners .grid span .company-hgp {
           width: 104px;
           height: 104px;
           margin-top: 30px; }
-        .homepage .companies .partners .grid span .company-bondbryan {
+        .home-page .companies .partners .grid span .company-bondbryan {
           width: 89px;
           height: 104px;
           margin-top: 30px; }
-        .homepage .companies .partners .grid span .company-scottbrownrigg {
+        .home-page .companies .partners .grid span .company-scottbrownrigg {
           width: 157px;
           height: 71px;
           margin-top: 45px; }
-        .homepage .companies .partners .grid span .company-bailygarner {
+        .home-page .companies .partners .grid span .company-bailygarner {
           width: 145px;
           height: 88px;
           margin-top: 39px; }
-        .homepage .companies .partners .grid span .company-jmarchitects {
+        .home-page .companies .partners .grid span .company-jmarchitects {
           width: 141px;
           height: 30px;
           margin-top: 68px; }
-        .homepage .companies .partners .grid span .company-keppie {
+        .home-page .companies .partners .grid span .company-keppie {
           width: 130px;
           height: 39px;
           margin-top: 63px; }
-        .homepage .companies .partners .grid span .company-conran {
+        .home-page .companies .partners .grid span .company-conran {
           width: 146px;
           height: 86px;
           margin-top: 45px; }
-        .homepage .companies .partners .grid span .company-bellway {
+        .home-page .companies .partners .grid span .company-bellway {
           width: 139px;
           height: 46px;
           margin-top: 60px; }
-        .homepage .companies .partners .grid span .company-adamarchitecture {
+        .home-page .companies .partners .grid span .company-adamarchitecture {
           width: 155px;
           height: 47px;
           margin-top: 58px; }
+
+@media only screen and (max-width: 400px) {
+  .home-page .container {
+    margin-left: 25px;
+    width: 85%; }
+  .home-page header {
+    width: 100%; }
+    .home-page header .logo {
+      left: 20px;
+      width: 155px; }
+    .home-page header .navigation {
+      display: none !important; }
+    .home-page header .mobile-nav {
+      display: inline-block;
+      position: relative; }
+      .home-page header .mobile-nav ul {
+        display: block; }
+        .home-page header .mobile-nav ul li {
+          display: inline-block; }
+        .home-page header .mobile-nav ul .open-nav {
+          position: absolute;
+          top: -25px;
+          right: -160px;
+          -webkit-transition: .3s ease-out;
+          transition: .3s ease-out;
+          border: solid 2px #000000;
+          width: 42px;
+          height: 30px;
+          padding: 6px 7px; }
+          .home-page header .mobile-nav ul .open-nav:hover {
+            border: solid 2px #FFFFFF;
+            background-color: #FFFFFF;
+            -webkit-filter: invert(100%);
+            filter: invert(100%); }
+        .home-page header .mobile-nav ul .login-container {
+          position: absolute;
+          top: -25px;
+          right: -100px;
+          width: 42px;
+          height: 30px;
+          border: 2px solid #000000; }
+          .home-page header .mobile-nav ul .login-container img {
+            position: absolute;
+            top: 4px;
+            left: 9px;
+            width: 20px; }
+  .home-page .masthead {
+    padding-top: 170px;
+    padding-bottom: 50px; }
+    .home-page .masthead .search h1 {
+      font-size: 40px;
+      line-height: 36px;
+      width: 100% !important; }
+    .home-page .masthead .search .form-fields input {
+      width: 300px !important; }
+    .home-page .masthead .search .form-fields li {
+      display: list-item; }
+    .home-page .masthead .search .form-fields .dropdown {
+      position: absolute;
+      width: 300px !important; }
+      .home-page .masthead .search .form-fields .dropdown .dropdown-content {
+        position: absolute; }
+    .home-page .masthead .search .form-fields .dropdown-type {
+      left: 0 !important;
+      top: 70px !important; }
+    .home-page .masthead .search .form-fields .dropdown-category {
+      left: 0 !important;
+      top: 140px !important; }
+    .home-page .masthead .search .form-fields .dropdown-location {
+      left: 0 !important;
+      top: 210px !important; }
+    .home-page .masthead .search .form-fields .search-field {
+      width: 300px !important;
+      left: 0 !important;
+      top: 280px !important;
+      z-index: -1 !important; }
+      .home-page .masthead .search .form-fields .search-field .search-icon {
+        position: absolute;
+        top: 13px !important;
+        left: 130px !important; }
+    .home-page .masthead .focus {
+      margin-top: 350px !important;
+      padding-bottom: 50px !important; }
+      .home-page .masthead .focus .category, .home-page .masthead .focus .region {
+        display: block;
+        width: 100%; }
+        .home-page .masthead .focus .category ul, .home-page .masthead .focus .region ul {
+          -webkit-column-count: 1;
+          column-count: 1; }
+      .home-page .masthead .focus .region {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        margin-top: 30px; }
+        .home-page .masthead .focus .region ul {
+          -webkit-column-count: 2;
+          column-count: 2; }
+  .home-page .featured .container {
+    width: 90%; }
+  .home-page .featured .jobs {
+    display: block;
+    width: 100%; }
+    .home-page .featured .jobs li {
+      display: block;
+      width: 100%;
+      margin-top: 50px; }
+  .home-page .skyline {
+    left: 0px; }
+    .home-page .skyline:after {
+      background-image: none; }
+  .home-page .companies {
+    margin-top: -54px; }
+    .home-page .companies .info {
+      display: block;
+      width: 100%;
+      padding-top: 0; }
+    .home-page .companies .partners {
+      margin-top: 20px;
+      margin-left: 6px; }
+      .home-page .companies .partners .grid {
+        -webkit-column-count: 1;
+        column-count: 1; }
+        .home-page .companies .partners .grid span {
+          width: 300px;
+          margin-bottom: 10px; } }
 
 .wrapper {
   margin: 0 auto;
   padding: 10px;
   height: 100%; }
+
+.section {
+  display: block;
+  padding: 100px 0; }
 
 .container {
   position: relative;
@@ -1181,58 +1420,57 @@ footer {
   height: 100%;
   z-index: 1; }
 
-.section {
-  display: block;
-  padding: 100px 0; }
-
-.page .container {
+.jobs-page .container {
   width: 1120px; }
 
-.findjobs {
+.employers-page .container {
+  width: 750px; }
+
+.jobs {
   padding-top: 200px; }
-  .findjobs .job-header {
+  .jobs .job-find {
     position: relative;
     padding-bottom: 60px; }
-    .findjobs .job-header h1 {
+    .jobs .job-find h1 {
       margin-top: -4px;
       font-size: 45px;
       letter-spacing: normal;
       color: #464646; }
-    .findjobs .job-header p {
+    .jobs .job-find p {
       position: absolute;
       top: 13px;
       right: 0px;
       font-size: 18px;
       color: #7B7B7B; }
-    .findjobs .job-header ul {
+    .jobs .job-find ul {
       display: inline-block;
       vertical-align: top; }
-      .findjobs .job-header ul li {
+      .jobs .job-find ul li {
         display: inline-block; }
-  .findjobs .job-list {
+  .jobs .job-list {
     position: relative;
     display: inline-block;
     vertical-align: top;
     margin-left: 3px;
     margin-top: 1px;
     width: 63.8%; }
-    .findjobs .job-list li {
+    .jobs .job-list li {
       position: relative; }
-      .findjobs .job-list li .job-info .title {
+      .jobs .job-list li .job-info .title {
         text-transform: uppercase;
         font-size: 15px;
         color: #464646;
         letter-spacing: 0.75px; }
-      .findjobs .job-list li .job-info .details {
+      .jobs .job-list li .job-info .details {
         margin-top: 5px;
         color: #7B7B7B;
         font-size: 15px; }
-      .findjobs .job-list li .job-more {
+      .jobs .job-list li .job-more {
         position: absolute;
         top: 9px;
         right: 1px;
         padding-bottom: 20px; }
-        .findjobs .job-list li .job-more .more {
+        .jobs .job-list li .job-more .more {
           border: 3px solid #B11486;
           padding: 13px 14px 11px 14px;
           text-transform: uppercase;
@@ -1241,61 +1479,61 @@ footer {
           letter-spacing: 0.93px;
           -webkit-transition: 0.3s ease-out;
           transition: 0.3s ease-out; }
-          .findjobs .job-list li .job-more .more:hover {
+          .jobs .job-list li .job-more .more:hover {
             background-color: #B11486;
             color: #FFFFFF; }
-    .findjobs .job-list li:nth-child(n+2) {
+    .jobs .job-list li:nth-child(n+2) {
       padding-top: 24px;
       border-top: 2px solid #F5F5F5;
       margin-top: 18px;
       padding-bottom: 1px; }
-      .findjobs .job-list li:nth-child(n+2) .job-more {
+      .jobs .job-list li:nth-child(n+2) .job-more {
         margin-top: 25px; }
-    .findjobs .job-list li:last-of-type {
+    .jobs .job-list li:last-of-type {
       padding-bottom: 20px;
       border-bottom: 2px solid #F5F5F5; }
-    .findjobs .job-list .pagination {
+    .jobs .job-list .pagination {
       margin-top: 30px;
       margin-left: -8px; }
-      .findjobs .job-list .pagination ul {
+      .jobs .job-list .pagination ul {
         position: relative;
         display: inline-block;
         vertical-align: top; }
-        .findjobs .job-list .pagination ul li {
+        .jobs .job-list .pagination ul li {
           display: inline-block;
           border: none;
           margin-left: 5px;
           font-size: 13px; }
-        .findjobs .job-list .pagination ul .previous {
+        .jobs .job-list .pagination ul .previous {
           padding: 7px 10px 6px 11px;
           background-color: #AFAFAF;
           color: #FFFFFF;
           font-size: 14px; }
-        .findjobs .job-list .pagination ul .number {
+        .jobs .job-list .pagination ul .number {
           padding: 5px 10px 7px 10px;
           border: 1px solid #DBDBDB;
           font-family: FuturaBook; }
-        .findjobs .job-list .pagination ul .active {
+        .jobs .job-list .pagination ul .active {
           padding: 5px 10px 7px 10px;
           background-color: #AEE119;
           color: #FFFFFF;
           border: 1px solid transparent; }
-        .findjobs .job-list .pagination ul .next {
+        .jobs .job-list .pagination ul .next {
           padding: 7px 10px 6px 10px;
           background-color: #B11486;
           color: #FFFFFF;
           font-size: 14px; }
-  .findjobs .job-filter {
+  .jobs .job-filter {
     position: relative;
     display: inline-block;
     vertical-align: top;
     width: 28.6%;
     margin-left: 6.9%;
     margin-top: -8px; }
-    .findjobs .job-filter .filter {
+    .jobs .job-filter .filter {
       background-color: #F5F5F5;
       padding: 30px; }
-      .findjobs .job-filter .filter h3 {
+      .jobs .job-filter .filter h3 {
         text-transform: uppercase;
         font-size: 15px;
         letter-spacing: 0.75px;
@@ -1304,54 +1542,54 @@ footer {
         color: #464646;
         margin-top: 2px;
         padding-bottom: 21px; }
-      .findjobs .job-filter .filter .keywords {
+      .jobs .job-filter .filter .keywords {
         position: relative;
         display: block;
         border: 1px solid #DBDBDB;
         background-color: #FFFFFF;
         padding: 18px 16px 9px 18px; }
-        .findjobs .job-filter .filter .keywords p {
+        .jobs .job-filter .filter .keywords p {
           margin-top: -2px;
           font-size: 12px;
           color: #464646;
           letter-spacing: 0.75px;
           text-transform: uppercase; }
-        .findjobs .job-filter .filter .keywords input {
+        .jobs .job-filter .filter .keywords input {
           padding-top: 9px;
           margin-left: -1px;
           outline: none;
           border: none;
           width: 100%; }
-        .findjobs .job-filter .filter .keywords ::-webkit-input-placeholder {
+        .jobs .job-filter .filter .keywords ::-webkit-input-placeholder {
           letter-spacing: 0.94px;
           color: #DBDBDB;
           font-size: 15px; }
-        .findjobs .job-filter .filter .keywords :-ms-input-placeholder {
+        .jobs .job-filter .filter .keywords :-ms-input-placeholder {
           letter-spacing: 0.94px;
           color: #DBDBDB;
           font-size: 15px; }
-        .findjobs .job-filter .filter .keywords ::-ms-input-placeholder {
+        .jobs .job-filter .filter .keywords ::-ms-input-placeholder {
           letter-spacing: 0.94px;
           color: #DBDBDB;
           font-size: 15px; }
-        .findjobs .job-filter .filter .keywords ::placeholder {
+        .jobs .job-filter .filter .keywords ::placeholder {
           letter-spacing: 0.94px;
           color: #DBDBDB;
           font-size: 15px; }
-      .findjobs .job-filter .filter .select {
+      .jobs .job-filter .filter .select {
         position: relative;
         margin-top: 15px;
         padding: 13px 0px 11px 14px;
         border: 1px solid #DBDBDB;
         background-color: #FFFFFF;
         cursor: pointer; }
-        .findjobs .job-filter .filter .select span {
+        .jobs .job-filter .filter .select span {
           position: absolute;
           top: 14px;
           right: 17px; }
-          .findjobs .job-filter .filter .select span img {
+          .jobs .job-filter .filter .select span img {
             width: 13px; }
-        .findjobs .job-filter .filter .select select {
+        .jobs .job-filter .filter .select select {
           border: none;
           outline: none;
           -webkit-appearance: none;
@@ -1361,7 +1599,7 @@ footer {
           width: 100%;
           cursor: pointer;
           height: 19px; }
-      .findjobs .job-filter .filter .submit {
+      .jobs .job-filter .filter .submit {
         margin-top: 15px;
         border: none;
         outline: none;
@@ -1375,6 +1613,352 @@ footer {
         padding: 11px 0px;
         -webkit-transition: 0.3s ease-out;
         transition: 0.3s ease-out; }
-        .findjobs .job-filter .filter .submit:hover {
+        .jobs .job-filter .filter .submit:hover {
           background-color: #000000;
           color: #FFFFFF; }
+
+.content {
+  margin-top: 92px; }
+  .content h2 {
+    font-family: FuturaBook;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 31px;
+    font-size: 22px;
+    color: #464646;
+    width: 65%; }
+    .content h2:after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 2px;
+      background-color: #B11486;
+      margin-top: 21px; }
+  .content p {
+    color: #464646;
+    font-size: 15px;
+    line-height: 30px; }
+  .content .intro {
+    margin-top: 57px;
+    font-size: 18px; }
+  .content P:nth-of-type(2) {
+    margin-top: 36px; }
+  .content P:nth-of-type(3) {
+    margin-top: 30px;
+    width: 50%; }
+  .content .building-container {
+    position: absolute;
+    top: 476px;
+    right: 7px; }
+    .content .building-container img {
+      width: 318px; }
+
+.companies {
+  position: relative;
+  top: 54px;
+  background-color: #F5F5F5; }
+  .companies h2 {
+    font-family: FuturaBook;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #B11486;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 5px; }
+    .companies h2:after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 2px;
+      background-color: #464646;
+      margin-top: 17px; }
+  .companies .about {
+    margin-top: 58px;
+    font-size: 15px;
+    line-height: 29px;
+    color: #464646; }
+  .companies .options li {
+    display: inline-block;
+    margin-top: 25px;
+    width: 100%;
+    color: #464646;
+    font-size: 14px; }
+    .companies .options li a {
+      color: #B11486;
+      display: inline-block; }
+      .companies .options li a:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #B11486;
+        margin-top: -1px; }
+      .companies .options li a:hover {
+        color: #000000; }
+        .companies .options li a:hover:after {
+          background-color: #000000; }
+    .companies .options li .see-all {
+      padding-right: 1.1%; }
+    .companies .options li .become-one {
+      padding-left: 1.1%; }
+  .companies .partners {
+    display: inline-block;
+    padding-top: 55px;
+    vertical-align: top;
+    margin-left: -11.4%;
+    margin-bottom: -30px; }
+    .companies .partners .grid {
+      display: block;
+      -webkit-column-count: 4;
+      column-count: 4; }
+      .companies .partners .grid span {
+        width: 236px;
+        height: 190px;
+        background-color: #FFFFFF;
+        display: inline-block;
+        margin-bottom: 1px;
+        margin-left: -10px;
+        margin-right: -7px;
+        text-align: center; }
+        .companies .partners .grid span .company-hgp {
+          width: 120px;
+          height: 120px;
+          margin-top: 34px;
+          margin-left: -1px; }
+        .companies .partners .grid span .company-bondbryan {
+          width: 103px;
+          height: 120px;
+          margin-top: 36px;
+          margin-left: -1px; }
+        .companies .partners .grid span .company-bailygarner {
+          width: 168px;
+          height: 101px;
+          margin-top: 44px;
+          margin-left: -1px; }
+        .companies .partners .grid span .company-jmarchitects {
+          width: 163px;
+          height: 33px;
+          margin-top: 79px;
+          margin-left: -1px; }
+        .companies .partners .grid span .company-conran {
+          width: 169px;
+          height: 99px;
+          margin-top: 51px;
+          margin-left: 0px; }
+        .companies .partners .grid span .company-bellway {
+          width: 161px;
+          height: 52px;
+          margin-top: 69px;
+          margin-left: -1px; }
+        .companies .partners .grid span .company-keppie {
+          width: 151px;
+          height: 44px;
+          margin-top: 73px;
+          margin-left: -1px; }
+        .companies .partners .grid span .company-scottbrownrigg {
+          width: 182px;
+          height: 81px;
+          margin-top: 55px;
+          margin-left: -1px; }
+
+.testimonials {
+  position: relative;
+  margin-top: 30px; }
+  .testimonials h2 {
+    font-family: FuturaBook;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: #464646;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    width: 770px; }
+    .testimonials h2:after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 2px;
+      background-color: #AEE119;
+      margin-top: 17px; }
+  .testimonials .slick-slider p {
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 31px;
+    color: #7B7B7B; }
+  .testimonials .slick-slider .name {
+    margin-top: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #464646;
+    padding-bottom: 37px; }
+  .testimonials .paginator .prev {
+    position: absolute;
+    top: 144px;
+    left: -274px;
+    cursor: pointer; }
+    .testimonials .paginator .prev img {
+      width: 40px;
+      height: 79px; }
+  .testimonials .paginator .next {
+    position: absolute;
+    top: 144px;
+    right: -274px;
+    cursor: pointer; }
+    .testimonials .paginator .next img {
+      width: 39px;
+      height: 79px; }
+  .testimonials .skyline-container {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 132px;
+    background-image: url(../images/skyline-full.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 1436px; }
+
+.work {
+  margin-top: -7px;
+  background-color: #F5F5F5;
+  padding-bottom: 120px; }
+  .work h2 {
+    margin-top: 5px;
+    font-family: FuturaBook;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 22px;
+    color: #464646; }
+    .work h2:after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 2px;
+      background-color: #B11486;
+      margin-top: 17px; }
+  .work p {
+    margin-top: 58px;
+    font-size: 15px;
+    color: #464646;
+    line-height: 28px; }
+  .work ul {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 40px; }
+    .work ul li {
+      display: inline-block;
+      font-size: 15px;
+      color: #464646; }
+      .work ul li a {
+        color: #B11486;
+        padding-bottom: 2px;
+        border-bottom: 2px solid #B11486;
+        -webkit-transition: 0.3s ease-out;
+        transition: 0.3s ease-out; }
+        .work ul li a:hover {
+          color: #000000;
+          border-bottom: 2px solid #000000; }
+      .work ul li .phone {
+        width: 21px;
+        margin-top: 1px;
+        margin-right: 10px;
+        margin-left: 2px; }
+      .work ul li .email {
+        width: 24px;
+        margin-right: 15px;
+        margin-left: 75px; }
+
+@media only screen and (max-width: 400px) {
+  .jobs-page .container {
+    margin-left: 25px;
+    width: 87%; }
+  .jobs-page .jobs {
+    padding-top: 170px;
+    padding-bottom: 0px; }
+    .jobs-page .jobs .job-find h1 {
+      font-size: 40px;
+      line-height: 36px;
+      width: 100% !important; }
+    .jobs-page .jobs .job-find p {
+      margin-top: 80px; }
+    .jobs-page .jobs .job-find ul {
+      display: block; }
+    .jobs-page .jobs .job-list {
+      display: block;
+      width: 100%; }
+      .jobs-page .jobs .job-list li .job-more {
+        top: 120px;
+        left: 0; }
+        .jobs-page .jobs .job-list li .job-more .more {
+          padding: 13px 10px 11px 10px; }
+      .jobs-page .jobs .job-list li:first-of-type {
+        margin-top: 30px; }
+      .jobs-page .jobs .job-list li:nth-child(n+2) {
+        padding-top: 50px;
+        margin-top: 100px; }
+        .jobs-page .jobs .job-list li:nth-child(n+2) .job-more {
+          margin-top: 30px; }
+      .jobs-page .jobs .job-list li:last-of-type {
+        padding-bottom: 100px;
+        border-bottom: 2px solid #F5F5F5; }
+    .jobs-page .jobs .pagination {
+      margin-top: -40px !important;
+      margin-left: -20px !important;
+      width: 110%;
+      padding-bottom: 80px; }
+      .jobs-page .jobs .pagination .previous {
+        padding: 7px 10px 6px 11px !important; }
+      .jobs-page .jobs .pagination .number {
+        padding: 5px 10px 7px 10px !important; }
+      .jobs-page .jobs .pagination .active {
+        padding: 5px 10px 7px 10px !important; }
+      .jobs-page .jobs .pagination .next {
+        padding: 7px 10px 6px 10px !important; }
+    .jobs-page .jobs .job-filter {
+      display: none; } }
+
+@media only screen and (max-width: 400px) {
+  .employers-page .container {
+    margin-left: 25px;
+    width: 87%; }
+  .employers-page .content {
+    padding-bottom: 0px !important; }
+    .employers-page .content h2 {
+      width: 100%; }
+    .employers-page .content P:nth-of-type(3) {
+      margin-top: 30px;
+      width: 100%; }
+    .employers-page .content .building-container {
+      display: none; }
+  .employers-page .companies h2 {
+    margin-top: -20px !important; }
+  .employers-page .companies .options .see-all {
+    padding-right: 5%; }
+  .employers-page .companies .options .become-one {
+    padding-left: 5%; }
+  .employers-page .partners {
+    margin-left: 10px; }
+    .employers-page .partners .grid {
+      -webkit-column-count: 1;
+      column-count: 1; }
+      .employers-page .partners .grid span {
+        width: 300px;
+        margin-bottom: 10px; }
+  .employers-page .testimonials h2 {
+    width: 100%; }
+  .employers-page .testimonials .paginator {
+    display: none; }
+  .employers-page .work ul {
+    display: block;
+    width: 100%; }
+    .employers-page .work ul li {
+      display: block;
+      width: 100%; }
+      .employers-page .work ul li .email {
+        margin-top: 25px;
+        margin-left: 0px; } }

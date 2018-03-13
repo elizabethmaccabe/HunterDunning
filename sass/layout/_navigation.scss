@@ -2,7 +2,7 @@
 // This file contains all Navigation styling
 // -----------------------------------------------------------------------------
 
-.page
+.jobs-page, .employers-page
 {
     .main-navigation
     {
@@ -126,6 +126,67 @@
                 {
                     color: $black;
                 }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 400px)
+{
+    .jobs-page, .employers-page
+    {
+        .main-navigation
+        {
+            .close-nav-container
+            {
+                position: absolute;
+                top: 40px;
+                right: 25px;
+                width: 42px;
+                height: 30px;
+                border: 2px solid $white;
+                text-align: center;
+                transition: 0.3s ease-out;
+
+                &:hover
+                {
+                    background-color: $black;
+                    border: 2px solid $black;
+                }
+
+                .close-nav
+                {
+                    padding-top: 5px;
+                    width: 16px;
+                }
+            }
+        }
+    }
+    
+    .overlay
+    {
+        .primary-nav-content
+        {
+            
+            &:after
+            {
+                margin-top: 50px !important;
+            }
+            
+            a
+            {
+                font-size: 60px !important;
+                line-height: 80px !important;
+            }
+        }
+        
+        .secondary-nav-content
+        {
+            
+            a
+            {
+                font-size: 25px !important;
+                line-height: 40px !important;
             }
         }
     }

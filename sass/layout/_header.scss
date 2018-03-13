@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 // [START] Header Styling //
-.page
+.jobs-page, .employers-page
 {
     header
     {
@@ -120,6 +120,93 @@
             }
         }
         // [END] .navigation //
+        
+        .mobile-nav
+        {
+            display: none;
+        }
     }
     // [END] header //
+}
+
+@media only screen and (max-width : 400px)
+{
+    .jobs-page, .employers-page
+    {
+        header
+        {
+            width: 100%;
+
+            .container
+            {
+                margin-left: 50px;
+                width: 85%;
+            }
+
+            .logo
+            {
+                left: -10px !important;
+                width: 155px;
+            }
+
+            .navigation
+            {
+                display: none !important;
+            }
+
+            .mobile-nav
+            {
+                display: inline-block;
+                position: relative;
+
+                ul
+                {
+                    display: block;
+
+                    li
+                    {
+                        display: inline-block;
+                    }
+
+                    .open-nav
+                    {
+                        position: absolute;
+                        top: -17px;
+                        right: -150px;
+                        transition: .3s ease-out;
+                        border: solid 2px $black;
+                        width: 42px;
+                        height: 30px;
+                        padding: 6px 7px;
+
+                        &:hover
+                        {
+                            border: solid 2px $white;
+                            background-color: $white;
+                            filter: invert(100%);
+                        }
+                    }
+
+                    .login-container
+                    {
+                        position: absolute;
+                        top: -17px;
+                        right: -90px;
+                        width: 42px;
+                        height: 30px;
+                        border: 2px solid $black;
+
+                        img
+                        {
+                            position: absolute;
+                            top: 4px;
+                            left: 9px;
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        // [END] header //
+    }
 }

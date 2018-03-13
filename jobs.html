@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Hunter Dunning</title>
+        <title>Jobs | Hunter Dunning</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/style.css">
-        <script src="assets/js/jquery-3.3.1.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <link rel="stylesheet" href="assets/slick/slick.css"/>
+        <link rel="stylesheet" href="assets/slick/slick-theme.css"/>
     </head>
     <body>
-        <div class="wrapper page">
+        <div class="wrapper jobs-page">
             <header>
                 <div class="container">
                     <section class="logo">
@@ -24,13 +25,19 @@
                             <li><a href="javascript:void(0)"><img class="open-nav" onclick="openNav()" src="assets/images/menu-hamburger.png"></a></li>
                         </ul>
                     </section>
+                    <section class="mobile-nav">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span class="login-container"><img class="login" src="assets/images/user.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><img class="open-nav" onclick="openNav()" src="assets/images/menu-hamburger.png"></a></li>
+                        </ul>
+                    </section>
                     <section class="main-navigation">
                         <div id="main-nav" class="overlay">
                             <a href="javascript:void(0)" onclick="closeNav()"><span class="close-nav-container"><img class="close-nav" src="assets/images/cross.png"></span></a>
                             <ul class="primary-nav-content">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="javascript:void(0)">Jobs</a></li>
-                                <li><a href="javascript:void(0)">Employers</a></li>
+                                <li><a href="jobs.html">Jobs</a></li>
+                                <li><a href="employers.html">Employers</a></li>
                             </ul>
                             <ul class="secondary-nav-content">
                                 <li><a href="javascript:void(0)">About Hunter Dunning</a></li>
@@ -42,9 +49,9 @@
                     </section>
                 </div>
             </header>
-            <section class="section findjobs">
+            <sect   ion class="section jobs">
                 <div class="container">
-                    <section class="job-header">
+                    <section class="job-find">
                         <ul>
                             <li><h1>Find your ideal job</h1></li>
                             <li><p>120 jobs found - Displaying results 1 - 20</p></li>
@@ -251,7 +258,7 @@
                             <li><a href="javascript:void(0)"><img src="assets/images/social-facebook.png"></a></li>
                             <li><a href="javascript:void(0)"><img src="assets/images/social-linkedin.png"></a></li>
                         </ul>
-                        <p>&copy; 2011 HunterDunning Ltd. <a href="javascript:void(0)">Design &amp; Build by Hinge Ltd</a></p>
+                        <p>&copy; 2011 HunterDunning Ltd. <a href="https://www.wearehinge.com/" target="_blank">Design &amp; Build by Hinge Ltd</a></p>
                     </section>
                     <section class="links">
                         <nav class="footer-navigation">
@@ -266,5 +273,7 @@
                 </div>
             </footer>
         </div>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

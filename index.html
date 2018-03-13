@@ -2,12 +2,13 @@
 <html lang="en">
     <head>
         <title>Hunter Dunning</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/style.css">
-        <script src="assets/js/jquery-3.3.1.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
     </head>
     <body>
-        <div class="wrapper homepage">
+        <div class="wrapper home-page">
             <header>
                 <div class="container">
                     <section class="logo">
@@ -24,13 +25,19 @@
                             <li><a href="javascript:void(0)"><img class="open-nav" onclick="openNav()" src="assets/images/menu-hamburger.png"></a></li>
                         </ul>
                     </section>
+                    <section class="mobile-nav">
+                        <ul>
+                            <li><a href="javascript:void(0)"><span class="login-container"><img class="login" src="assets/images/user.png"></span></a></li>
+                            <li><a href="javascript:void(0)"><img class="open-nav" onclick="openNav()" src="assets/images/menu-hamburger.png"></a></li>
+                        </ul>
+                    </section>
                     <section class="main-navigation">
                         <div id="main-nav" class="overlay">
                             <a href="javascript:void(0)" onclick="closeNav()"><span class="close-nav-container"><img class="close-nav" src="assets/images/cross.png"></span></a>
                             <ul class="primary-nav-content">
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="javascript:void(0)">Jobs</a></li>
-                                <li><a href="javascript:void(0)">Employers</a></li>
+                                <li><a href="jobs.html">Jobs</a></li>
+                                <li><a href="employers.html">Employers</a></li>
                             </ul>
                             <ul class="secondary-nav-content">
                                 <li><a href="javascript:void(0)">About Hunter Dunning</a></li>
@@ -46,10 +53,9 @@
                 <div class="container">
                     <section class="search">
                         <form class="job-search">
-                            <h1>Build your architecture career with us.</h1>
+                            <h1>Build your architecture career with us.</h1>                            
                             <ul class="form-fields">
                                 <li><input type="text" placeholder="Search for keywords"></li>
-                                
                                 <li class="dropdown dropdown-type"><a href="#">Job type<span><img src="assets/images/triangle-black.png"></span></a>
                                     <ul class="dropdown-content content-type">
                                         <li><a href="javascript:void(0)">Contract/Temporary</a></li>
@@ -85,7 +91,7 @@
                                         <li><a href="javascript:void(0)">West Midlands</a></li>
                                     </ul>
                                 </li>
-                                <li class="search-field"><button class="search"><img class="search" src="assets/images/homepage/search-black.png"></button></li>
+                                <li class="search-field"><a href="jobs.html"><button class="search"><img class="search-icon" src="assets/images/homepage/search-black.png"></button></a></li>
                             </ul>
                         </form>
                     </section><!-- [end] search form section -->
@@ -185,7 +191,7 @@
                 <div class="container">
                     <section class="info">
                         <h2>We work with some great companies</h2>
-                        <p class="about"><!--Private Practices, Public Sector Authorities, Consultancies &amp; Housing Associations. Come see who we work with.-->Private Practices, Public Sector Authorities, Consultancies & Housing Associations. Come see who we work with.</p>
+                        <p class="about">Private Practices, Public Sector Authorities, Consultancies &amp; Housing Associations. Come see who we work with.</p>
                         <ul class="options">
                             <li><a href="javascript:void(0)" class="see-all">See all of them</a>&#8226;<a href="javascript:void(0)" class="become-one">Become one of them</a></li>
                         </ul>
@@ -216,7 +222,7 @@
                             <li><a href="javascript:void(0)"><img src="assets/images/social-facebook.png"></a></li>
                             <li><a href="javascript:void(0)"><img src="assets/images/social-linkedin.png"></a></li>
                         </ul>
-                        <p>&copy; 2011 HunterDunning Ltd. <a href="javascript:void(0)">Design &amp; Build by Hinge Ltd</a></p>
+                        <p>&copy; 2011 HunterDunning Ltd. <a href="https://www.wearehinge.com/" target="_blank">Design &amp; Build by Hinge Ltd</a></p>
                     </section>
                     <section class="links">
                         <nav class="footer-navigation">
@@ -231,5 +237,8 @@
                 </div>
             </footer>
         </div>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/slick/slick.min.js"></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
