@@ -959,21 +959,17 @@ footer {
           font-family: GothamLight;
           color: #464646; }
         .home-page .masthead .search .job-search .form-fields .dropdown {
+          z-index: 0;
           position: absolute;
           width: 150px;
           height: 55px;
           background-color: #FFFFFF;
-          padding-top: 20px;
-          padding-left: 25px; }
-          .home-page .masthead .search .job-search .form-fields .dropdown a {
-            font-family: GothamLight;
-            color: #464646; }
-          .home-page .masthead .search .job-search .form-fields .dropdown span {
-            position: absolute;
-            right: 21px;
-            top: 19px; }
-            .home-page .masthead .search .job-search .form-fields .dropdown span img {
-              width: 10px; }
+          padding-top: 5px;
+          padding-left: 25px;
+          border: none;
+          border-radius: 0px;
+          -webkit-appearance: none;
+          -webkit-border-radius: 0px; }
           .home-page .masthead .search .job-search .form-fields .dropdown .dropdown-content {
             display: none;
             margin: 25px 0px 0px -25px;
@@ -1001,6 +997,24 @@ footer {
         .home-page .masthead .search .job-search .form-fields .dropdown-location {
           position: absolute;
           left: 631px; }
+        .home-page .masthead .search .job-search .form-fields .arrow-type {
+          position: relative;
+          top: 20px;
+          left: 120px; }
+          .home-page .masthead .search .job-search .form-fields .arrow-type img {
+            width: 10px; }
+        .home-page .masthead .search .job-search .form-fields .arrow-category {
+          position: relative;
+          top: 20px;
+          left: 270px; }
+          .home-page .masthead .search .job-search .form-fields .arrow-category img {
+            width: 10px; }
+        .home-page .masthead .search .job-search .form-fields .arrow-location {
+          position: relative;
+          top: 20px;
+          left: 415px; }
+          .home-page .masthead .search .job-search .form-fields .arrow-location img {
+            width: 10px; }
         .home-page .masthead .search .job-search .form-fields .search-field {
           position: absolute;
           right: 208px;
@@ -1525,7 +1539,8 @@ footer {
   width: 750px; }
 
 .jobs {
-  padding-top: 200px; }
+  padding-top: 200px;
+  padding-bottom: 0px; }
   .jobs .job-find {
     position: relative;
     padding-bottom: 60px; }
@@ -1592,7 +1607,8 @@ footer {
       border-bottom: 2px solid #F5F5F5; }
     .jobs .job-list .pagination {
       margin-top: 30px;
-      margin-left: -8px; }
+      margin-left: -8px;
+      padding-bottom: 100px; }
       .jobs .job-list .pagination ul {
         position: relative;
         display: inline-block;

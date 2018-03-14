@@ -189,30 +189,17 @@
                     
                     .dropdown
                     {
+                        z-index: 0;
                         position: absolute;
                         width: 150px;
                         height: 55px;
                         background-color: $white;
-                        padding-top: 20px;
+                        padding-top: 5px;
                         padding-left: 25px;
-                        
-                        a
-                        {
-                            font-family: GothamLight;
-                            color: $dark-grey;
-                        }
-                        
-                        span
-                        {
-                            position: absolute;
-                            right: 21px;
-                            top: 19px;
-
-                            img
-                            {
-                                width: 10px;
-                            }
-                        }
+                        border: none;
+                        border-radius: 0px;
+                        -webkit-appearance: none;
+                        -webkit-border-radius: 0px;
                         
                         .dropdown-content
                         {
@@ -253,6 +240,42 @@
                     .dropdown-category {position: absolute; left: 471px;}
                     
                     .dropdown-location {position: absolute; left: 631px;}
+                    
+                    .arrow-type
+                    {
+                        position: relative;
+                        top: 20px;
+                        left: 120px;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .arrow-category
+                    {
+                        position: relative;
+                        top: 20px;
+                        left: 270px;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .arrow-location
+                    {
+                        position: relative;
+                        top: 20px;
+                        left: 415px;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
                     
                     .search-field
                     {
