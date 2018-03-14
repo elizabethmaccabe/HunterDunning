@@ -1,0 +1,48 @@
+.open-nav
+{
+    position: absolute;
+    top: 6px;
+    right: -40px;
+    transition: .3s ease-out;
+    border: solid 2px $black;
+    width: 42px;
+    height: 30px;
+    padding: 6px 7px;
+
+    &:hover
+    {
+        border: solid 2px $white;
+        background-color: $white;
+        filter: invert(100%);
+    }
+}
+
+.search-container
+{
+    position: absolute;
+    right: 208px;
+    top: 0;
+    height: 55px;
+    border: 2px solid $black;
+    padding: 10px;
+    width: 9.2%;
+    transition: .3s ease-out;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:hover
+    {
+        filter: invert(100%);
+        border: solid 2px transparent;
+        background-color: $white;
+    }
+
+    .search
+    {
+        width: 23px;
+        margin: 0 auto;
+        border: none;
+        background: none;
+        outline: none;
+    }
+}

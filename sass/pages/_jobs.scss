@@ -1,0 +1,262 @@
+.jobs-page
+{
+    .container
+    {
+        width: 1120px;
+    }
+
+    .jobs
+    {
+        padding-top: 200px;
+        padding-bottom: 0px;
+
+        .job-find
+        {
+            position: relative;
+            padding-bottom: 60px;
+
+            h1
+            {
+                margin-top: -4px;
+                font-size: 45px;
+                letter-spacing: normal;
+                color: $dark-grey;
+            }
+
+            p
+            {
+                position: absolute;
+                top: 13px;
+                right: 0px;
+                font-size: 18px;
+                color: $grey;
+            }
+
+            ul
+            {
+                display: inline-block;
+                vertical-align: top;
+
+                li
+                {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .job-list
+        {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 3px;
+            margin-top: 1px;
+            width: 63.8%;
+
+            li
+            {
+                position: relative;
+
+                .job-info
+                {                
+                    .title
+                    {
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        color: $dark-grey;
+                        letter-spacing: 0.75px;
+                    }
+
+                    .details
+                    {
+                        margin-top: 5px;
+                        color: $grey;
+                        font-size: 15px;
+                    }
+                }
+
+                .job-more
+                {
+                    position: absolute;
+                    top: 9px;
+                    right: 1px;
+                    padding-bottom: 20px;
+
+                    .more
+                    {
+                        border: 3px solid $pink;
+                        padding: 13px 14px 11px 14px;
+                        text-transform: uppercase;
+                        color: $pink;
+                        font-size: 15px;
+                        letter-spacing: 0.93px;
+                        transition: 0.3s ease-out;
+
+                        &:hover
+                        {
+                            background-color: $pink;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            li:nth-child(n+2)
+            {
+                padding-top: 24px;
+                border-top: 2px solid $lightest-grey;
+                margin-top: 18px;
+                padding-bottom: 1px;
+
+                .job-more
+                {
+                    margin-top: 25px;
+                }
+            }
+
+            li:last-of-type
+            {
+                padding-bottom: 20px;
+                border-bottom: 2px solid $lightest-grey;
+            }
+
+            .pagination
+            {
+                margin-top: 30px;
+                margin-left: -8px;
+                padding-bottom: 100px;
+
+                ul
+                {
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: top;
+
+                    li
+                    {
+                        display: inline-block;
+                        border: none;
+                        margin-left: 5px;
+                        font-size: 13px;
+                    }
+
+                    .previous
+                    {
+                        padding: 7px 10px 6px 11px;
+                        background-color: #AFAFAF;
+                        color: $white;
+                        font-size: 14px;
+                    }
+
+                    .number
+                    {
+                        padding: 5px 10px 7px 10px;
+                        border: 1px solid $light-grey;
+                        font-family: FuturaBook;
+                    }
+
+                    .active
+                    {
+                        padding: 5px 10px 7px 10px;
+                        background-color: $green;
+                        color: $white;
+                        border: 1px solid transparent;
+                    }
+
+                    .next
+                    {
+
+                        padding: 7px 10px 6px 10px;
+                        background-color: $pink;
+                        color: $white;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .job-filter
+        {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 28.6%;
+            margin-left: 6.9%;
+            margin-top: -8px;
+
+            .filter
+            {
+                background-color: $lightest-grey;
+                padding: 30px;
+
+                h3
+                {
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    letter-spacing: 0.75px;
+                    font-family: GothamBook;
+                    font-weight: 300;
+                    color: $dark-grey;
+                    margin-top: 2px;
+                    padding-bottom: 21px;
+                }
+
+                .keywords
+                {
+                    position: relative;
+                    display: block;
+                    border: 1px solid $light-grey;
+                    background-color: $white;
+                    padding: 18px 16px 9px 18px;
+
+                    p
+                    {
+                        margin-top: -2px;
+                        font-size: 12px;
+                        color: $dark-grey;
+                        letter-spacing: 0.75px;
+                        text-transform: uppercase;
+                    }
+
+                    input
+                    {
+                        padding-top: 9px;
+                        margin-left: -1px;
+                        outline: none;
+                        border: none;
+                        width: 100%;
+                    }
+
+                    ::placeholder
+                    {
+                        letter-spacing: 0.94px;
+                        color: $light-grey;
+                        font-size: 15px;
+                    }
+                }
+
+                .submit
+                {
+                    margin-top: 15px;
+                    border: none;
+                    outline: none;
+                    -webkit-appearance: none;
+                    background-color: $pink;
+                    color: $white;
+                    text-transform: uppercase;
+                    letter-spacing: 0.85px;
+                    font-size: 15px;
+                    width: 100%;
+                    padding: 11px 0px;
+                    transition: 0.3s ease-out;
+
+                    &:hover
+                    {
+                        background-color: $black;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,324 @@
+// Media Queries for Tablet Sizes
+
+@media only screen and (min-width : 580px) and (max-width : 800px)
+{
+    // [START] homepage //
+    .home-page
+    {
+        .container
+        {
+            margin-left: 50px;
+            width: 90%;
+        }
+        
+        header
+        {
+            width: 100%;
+            
+            .container
+            {
+                margin-left: 80px;
+                width: 80%;
+            }
+            
+            .navigation
+            {
+                right: 10px;
+                
+                li:first-child, li:nth-child(2)
+                {
+                    display: none;
+                }
+            }
+        }
+        
+        .masthead
+        {
+            .search
+            {
+                h1
+                {
+                    width: 100% !important;
+                }
+                
+                .form-fields
+                {
+                    input
+                    {
+                        width: 650px !important;
+                    }
+                    
+                    li
+                    {
+                        display: list-item;
+                    }
+                    
+                    .dropdown
+                    {
+                        position: absolute;
+                        width: 650px !important;
+                    }
+                    
+                    .dropdown-type {left: 0 !important; top: 70px !important;}
+                    
+                    .dropdown-category {left: 0 !important; top: 140px !important;}
+                    
+                    .dropdown-location {left: 0 !important; top: 210px !important;}
+                    
+                    .arrow-type
+                    {
+                        position: relative;
+                        top: 90px !important;
+                        left: -50px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .arrow-category
+                    {
+                        position: relative;
+                        top: 105px !important;
+                        left: 605px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .arrow-location
+                    {
+                        position: relative;
+                        top: 175px !important;
+                        left: 591px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .search-container
+                    {
+                        width: 650px !important;
+                        left: 0 !important;
+                        top: 280px !important;
+                        z-index: -1 !important;
+                        
+                        .search-icon
+                        {
+                            position: absolute;
+                            top: 13px !important;
+                            left: 320px !important;
+                        }
+                    }
+                }
+            }
+            
+            .focus
+            {
+                margin-top: 350px !important;
+                padding-bottom: 10px !important;
+                
+                .category
+                {
+                    ul
+                    {
+                        column-count: 1;
+                    }
+                }
+                
+                .region
+                {
+                    margin-left: 30px;
+                    
+                    ul
+                    {
+                        column-count: 2;
+                    }
+                }
+            }
+        }
+        
+        .featured
+        {                
+            .jobs
+            {
+                display: block;
+                width: 100%;
+
+                li
+                {
+                    display: block !important;
+                    width: 100% !important;
+                }
+            }
+        }
+        
+        .skyline
+        {
+            left: 0px;
+            
+            &:after
+            {
+                background-image: none;
+            }
+        }
+        
+        .companies
+        {
+            margin-top: -54px;
+            padding-bottom: 80px;
+            
+            .info
+            {
+                display: block;
+                width: 100%;
+                padding-top: 0;
+            }
+            
+            .partners
+            {
+                margin-top: 20px;
+                margin-left: 20px;
+                
+                .grid
+                {
+                    column-count: 3;
+                    min-width: 600px;
+                    
+                    span
+                    {
+                        width: 201px;
+                    }
+                }
+            }
+        }
+    }
+    // [END] homepage //
+    
+    // [START] jobs //
+    .jobs-page
+    {
+        .container
+        {
+            margin-left: 50px;
+            width: 87%;
+        }
+        
+        .jobs
+        {
+            padding-bottom: 0px;
+            
+            .job-find
+            {
+                p
+                {
+                    top: 80px;
+                    left: 0;
+                }
+                
+                ul
+                {
+                    display: block;
+                    vertical-align: top;
+
+                    li
+                    {
+                        display: block;
+                    }
+                }
+            }
+            
+            .job-list
+            {
+                width: 100%;
+                margin-top: 30px;
+            }
+            
+            .pagination
+            {
+                padding-bottom: 80px;
+            }
+            
+            .job-filter
+            {
+                display: none;
+            }
+        }
+    }
+    // [END] jobs //
+    
+    // [START] employers //
+    .employers-page
+    {
+        .container
+        {
+            margin-left: 50px;
+            width: 87%;
+        }
+        
+        .content
+        {
+            padding-bottom: 0px !important;
+            
+            h2
+            {
+                width: 100%;
+            }
+            
+            .building-container
+            {
+                top: 466px !important;
+            }
+        }
+        
+        .companies
+        {
+            h2
+            {
+                margin-top: -30px !important;
+            }
+            
+            .options
+            {
+                .see-all {padding-right: 2%;}
+                .become-one {padding-left: 2%;}
+            }
+            
+            .partners
+            {
+                margin-left: 10px;
+
+                .grid
+                {
+                    column-count: 2;
+
+                    span
+                    {
+                        width: 300px;
+                        margin-bottom: 10px;
+                        margin-left: 1px;
+                    }
+                }
+            }
+        }
+        
+        .testimonials
+        {
+            h2
+            {
+                width: 100%;
+            }
+            
+            .paginator
+            {
+                display: none;
+            }
+        }
+    }
+    // [END] employers //
+}

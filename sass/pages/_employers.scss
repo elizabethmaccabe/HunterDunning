@@ -1,0 +1,357 @@
+.employers-page
+{
+    .container
+    {
+        width: 750px;
+    }
+
+    .content
+    {
+        margin-top: 92px;
+
+        h2
+        {
+            font-family: FuturaBook;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 31px;
+            font-size: 22px;
+            color: $dark-grey;
+            width: 65%;
+
+            &:after
+            {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 2px;
+                background-color: $pink;
+                margin-top: 21px;
+            }
+        }
+
+        p
+        {
+            color: $dark-grey;
+            font-size: 15px;
+            line-height: 30px;
+        }
+
+        .intro
+        {
+            margin-top: 57px;
+            font-size: 18px;
+        }
+
+        P:nth-of-type(2)
+        {
+            margin-top: 36px;
+        }
+
+        P:last-of-type
+        {
+            margin-top: 30px;
+            width: 50%;
+        }
+
+        .building-container
+        {
+            position: absolute;
+            top: 476px;
+            right: 7px;
+
+            img
+            {
+                width: 318px;
+            }
+        }
+    }
+
+    .companies
+    {
+        position: relative;
+        top: 54px;
+        background-color: $lightest-grey;
+
+        h2
+        {
+            font-family: FuturaBook;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: $pink;
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-top: 5px;
+
+            &:after
+            {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 2px;
+                background-color: $dark-grey;
+                margin-top: 17px;
+            }
+        }
+
+        .about
+        {
+            margin-top: 58px;
+            font-size: 15px;
+            line-height: 29px;
+            color: $dark-grey;
+        }
+
+        .options
+        {                    
+            li
+            {
+                display: inline-block;
+                margin-top: 25px;
+                width: 100%;
+                color: $dark-grey;
+                font-size: 14px;
+
+                a
+                {
+                    color: $pink;
+                    display: inline-block;
+
+                    &:after
+                    {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $pink;
+                        margin-top: -1px;
+                    }
+
+                    &:hover
+                    {
+                        color: $black;
+
+                        &:after
+                        {
+                            background-color: $black;
+                        }
+                    }
+                }
+
+                .see-all {padding-right: 1.1%;}
+                .become-one {padding-left: 1.1%;}
+            }
+        }
+
+        .partners
+        {
+            display: inline-block;
+            padding-top: 55px;
+            vertical-align: top;
+            margin-left: -11.4%;
+            margin-bottom: -30px;
+
+            .grid
+            {
+                display: block;
+                column-count: 4;
+
+                span
+                {
+                    width: 236px;
+                    height: 190px;
+                    background-color: $white;
+                    display: inline-block;
+                    margin-bottom: 1px;
+                    margin-left: -10px;
+                    margin-right: -7px;
+                    text-align: center;
+
+                    .company-hgp                {width: 120px; height: 120px; margin-top: 34px; margin-left: -1px;}
+                    .company-bondbryan          {width: 103px; height: 120px; margin-top: 36px; margin-left: -1px;}
+                    .company-bailygarner        {width: 168px; height: 101px; margin-top: 44px; margin-left: -1px;}
+                    .company-jmarchitects       {width: 163px; height: 33px; margin-top: 79px; margin-left: -1px;}
+                    .company-conran             {width: 169px; height: 99px; margin-top: 51px; margin-left: 0px;}
+                    .company-bellway            {width: 161px; height: 52px; margin-top: 69px; margin-left: -1px;}
+                    .company-keppie             {width: 151px; height: 44px; margin-top: 73px; margin-left: -1px;}
+                    .company-scottbrownrigg     {width: 182px; height: 81px; margin-top: 55px; margin-left: -1px;}
+                }
+            }
+        }
+    }
+
+    .testimonials
+    {
+        position: relative;
+        margin-top: 30px;
+
+        h2
+        {
+            font-family: FuturaBook;
+            font-weight: 300;
+            letter-spacing: 3px;
+            color: $dark-grey;
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            width: 770px;
+
+            &:after
+            {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 2px;
+                background-color: $green;
+                margin-top: 17px;
+            }
+        }
+
+        .slick-slider
+        {
+            p
+            {
+                margin-top: 60px;
+                font-size: 18px;
+                line-height: 31px;
+                color: $grey;
+            }
+
+            .name
+            {
+                margin-top: 20px;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: $dark-grey;
+                padding-bottom: 37px;
+            }
+        }
+
+        .paginator
+        {
+            .prev
+            {
+                position: absolute;
+                top: 144px;
+                left: -274px;
+                cursor: pointer;
+
+                img
+                {
+                    width: 40px;
+                    height: 79px;
+                }
+            }
+
+            .next
+            {
+                position: absolute;
+                top: 144px;
+                right: -274px;
+                cursor: pointer;
+
+                img
+                {
+                    width: 39px;
+                    height: 79px;
+                }
+            }
+        }
+
+        .skyline-container
+        {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            bottom: 5px;
+            width: 100%;
+            height: 132px;
+            background-image: url(../images/skyline-full.png);
+            background-repeat: repeat-x;
+            background-position: bottom;
+            background-size: 1436px;
+        }
+    }
+
+    .work
+    {
+        margin-top: -7px;
+        background-color: $lightest-grey;
+        padding-bottom: 120px;
+
+        h2
+        {
+            margin-top: 5px;
+            font-family: FuturaBook;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 22px;
+            color: $dark-grey;
+
+            &:after
+            {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 2px;
+                background-color: $pink;
+                margin-top: 17px;
+            }
+        }
+
+        p
+        {
+            margin-top: 58px;
+            font-size: 15px;
+            color: $dark-grey;
+            line-height: 28px;
+        }
+
+        ul
+        {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+
+            li
+            {
+                display: inline-block;
+                font-size: 15px;
+                color: $dark-grey;
+
+                a
+                {
+                    color: $pink;
+                    padding-bottom: 2px;
+                    border-bottom: 2px solid $pink;
+                    transition: 0.3s ease-out;
+
+                    &:hover
+                    {
+                        color: $black;
+                        border-bottom: 2px solid $black;
+                    }
+                }
+
+                .phone
+                {
+                    width: 21px;
+                    margin-top: 1px;
+                    margin-right: 10px;
+                    margin-left: 2px;
+                }
+
+                .email
+                {
+                    width: 24px;
+                    margin-right: 15px;
+                    margin-left: 75px;
+                }
+            }
+        }
+    }
+}

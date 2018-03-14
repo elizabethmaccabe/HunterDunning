@@ -10,7 +10,7 @@ html, body
 
 h1
 {
-    @include fontSize(55px);
+    font-size:  55px;
     font-family: FuturaBook, "Arial", sans-serif;
     font-weight: 500;
     letter-spacing: 2.29px;
