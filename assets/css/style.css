@@ -783,10 +783,10 @@ footer {
 
 @media only screen and (min-width: 580px) and (max-width: 800px) {
   .jobs-page header, .employers-page header {
-    width: 100%; }
+    width: 80% !important; }
     .jobs-page header .container, .employers-page header .container {
       margin-left: 80px;
-      width: 80%; }
+      width: 80% !important; }
     .jobs-page header .navigation, .employers-page header .navigation {
       right: 10px; }
       .jobs-page header .navigation li:first-child, .jobs-page header .navigation li:nth-child(2), .employers-page header .navigation li:first-child, .employers-page header .navigation li:nth-child(2) {
@@ -794,10 +794,10 @@ footer {
 
 @media only screen and (max-width: 400px) {
   .jobs-page header, .employers-page header {
-    width: 100%; }
+    width: 100% !important; }
     .jobs-page header .container, .employers-page header .container {
       margin-left: 50px;
-      width: 85%; }
+      width: 80% !important; }
     .jobs-page header .logo, .employers-page header .logo {
       left: -10px !important;
       width: 155px; }
@@ -1789,7 +1789,7 @@ footer {
 @media only screen and (max-width: 400px) {
   .home-page .container {
     margin-left: 25px;
-    width: 85%; }
+    width: 85% !important; }
   .home-page header {
     width: 100%; }
     .home-page header .logo {
@@ -1930,7 +1930,7 @@ footer {
           margin-bottom: 10px; }
   .jobs-page .container {
     margin-left: 25px;
-    width: 87%; }
+    width: 87% !important; }
   .jobs-page .jobs {
     padding-top: 170px;
     padding-bottom: 0px; }
@@ -1977,7 +1977,7 @@ footer {
       display: none; }
   .employers-page .container {
     margin-left: 25px;
-    width: 87%; }
+    width: 87% !important; }
   .employers-page .content {
     padding-bottom: 0px !important; }
     .employers-page .content h2 {
@@ -1994,13 +1994,13 @@ footer {
   .employers-page .companies .options .become-one {
     padding-left: 5%; }
   .employers-page .partners {
-    margin-left: 10px; }
+    margin-left: 10px !important; }
     .employers-page .partners .grid {
-      -webkit-column-count: 1;
-      column-count: 1; }
+      -webkit-column-count: 1 !important;
+      column-count: 1 !important; }
       .employers-page .partners .grid span {
-        width: 300px;
-        margin-bottom: 10px; }
+        width: 300px !important;
+        margin-bottom: 10px !important; }
   .employers-page .testimonials h2 {
     width: 100%; }
   .employers-page .testimonials .paginator {

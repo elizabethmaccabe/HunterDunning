@@ -6,7 +6,7 @@
         .container
         {
             margin-left: 25px;
-            width: 85%;
+            width: 85% !important;
         }
         
         header
@@ -274,7 +274,7 @@
         .container
         {
             margin-left: 25px;
-            width: 87%;
+            width: 87% !important;
         }
         
         .jobs
@@ -386,7 +386,7 @@
         .container
         {
             margin-left: 25px;
-            width: 87%;
+            width: 87% !important;
         }
         
         .content
@@ -426,16 +426,16 @@
         
         .partners
         {
-            margin-left: 10px;
+            margin-left: 10px !important;
             
             .grid
             {
-                column-count: 1;
+                column-count: 1 !important;
                 
                 span
                 {
-                    width: 300px;
-                    margin-bottom: 10px;
+                    width: 300px !important;
+                    margin-bottom: 10px !important;
                 }
             }
         }
