@@ -200,6 +200,7 @@
                         border-radius: 0px;
                         -webkit-appearance: none;
                         -webkit-border-radius: 0px;
+                        outline: none;
                         
                         .dropdown-content
                         {
@@ -764,6 +765,42 @@
                     
                     .dropdown-location {left: 0 !important; top: 210px !important;}
                     
+                    .arrow-type
+                    {
+                        position: relative;
+                        top: 90px !important;
+                        left: -50px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .arrow-category
+                    {
+                        position: relative;
+                        top: 105px !important;
+                        left: 605px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .arrow-location
+                    {
+                        position: relative;
+                        top: 175px !important;
+                        left: 591px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
                     .search-field
                     {
                         width: 650px !important;
@@ -973,6 +1010,7 @@
                     {
                         position: absolute;
                         width: 300px !important;
+                        outline: none;
                         
                         .dropdown-content
                         {
@@ -985,6 +1023,42 @@
                     .dropdown-category {left: 0 !important; top: 140px !important;}
                     
                     .dropdown-location {left: 0 !important; top: 210px !important;}
+                    
+                    .arrow-type
+                    {
+                        position: relative;
+                        top: 33px !important;
+                        left: 260px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .arrow-category
+                    {
+                        position: relative;
+                        top: 102px !important;
+                        left: 247px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
+                    
+                    .arrow-location
+                    {
+                        position: relative;
+                        top: 175px !important;
+                        left: 234px !important;
+
+                        img
+                        {
+                            width: 10px;
+                        }
+                    }
                     
                     .search-field
                     {

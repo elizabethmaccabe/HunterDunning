@@ -969,7 +969,8 @@ footer {
           border: none;
           border-radius: 0px;
           -webkit-appearance: none;
-          -webkit-border-radius: 0px; }
+          -webkit-border-radius: 0px;
+          outline: none; }
           .home-page .masthead .search .job-search .form-fields .dropdown .dropdown-content {
             display: none;
             margin: 25px 0px 0px -25px;
@@ -1345,6 +1346,24 @@ footer {
   .home-page .masthead .search .form-fields .dropdown-location {
     left: 0 !important;
     top: 210px !important; }
+  .home-page .masthead .search .form-fields .arrow-type {
+    position: relative;
+    top: 90px !important;
+    left: -50px !important; }
+    .home-page .masthead .search .form-fields .arrow-type img {
+      width: 10px; }
+  .home-page .masthead .search .form-fields .arrow-category {
+    position: relative;
+    top: 105px !important;
+    left: 605px !important; }
+    .home-page .masthead .search .form-fields .arrow-category img {
+      width: 10px; }
+  .home-page .masthead .search .form-fields .arrow-location {
+    position: relative;
+    top: 175px !important;
+    left: 591px !important; }
+    .home-page .masthead .search .form-fields .arrow-location img {
+      width: 10px; }
   .home-page .masthead .search .form-fields .search-field {
     width: 650px !important;
     left: 0 !important;
@@ -1450,7 +1469,8 @@ footer {
       display: list-item; }
     .home-page .masthead .search .form-fields .dropdown {
       position: absolute;
-      width: 300px !important; }
+      width: 300px !important;
+      outline: none; }
       .home-page .masthead .search .form-fields .dropdown .dropdown-content {
         position: absolute; }
     .home-page .masthead .search .form-fields .dropdown-type {
@@ -1462,6 +1482,24 @@ footer {
     .home-page .masthead .search .form-fields .dropdown-location {
       left: 0 !important;
       top: 210px !important; }
+    .home-page .masthead .search .form-fields .arrow-type {
+      position: relative;
+      top: 33px !important;
+      left: 260px !important; }
+      .home-page .masthead .search .form-fields .arrow-type img {
+        width: 10px; }
+    .home-page .masthead .search .form-fields .arrow-category {
+      position: relative;
+      top: 102px !important;
+      left: 247px !important; }
+      .home-page .masthead .search .form-fields .arrow-category img {
+        width: 10px; }
+    .home-page .masthead .search .form-fields .arrow-location {
+      position: relative;
+      top: 175px !important;
+      left: 234px !important; }
+      .home-page .masthead .search .form-fields .arrow-location img {
+        width: 10px; }
     .home-page .masthead .search .form-fields .search-field {
       width: 300px !important;
       left: 0 !important;
