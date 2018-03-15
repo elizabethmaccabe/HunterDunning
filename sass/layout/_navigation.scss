@@ -131,8 +131,47 @@
     }
 }
 
-@media only screen and (max-width : 400px)
+@media only screen and (min-width : 580px) and (max-width : 800px)
 {
+    .home-page
+    {
+        .main-navigation
+        {
+            .close-nav-container
+            {
+                top: 86px;
+                right: 54px;
+            }
+        }
+    }
+    
+    .jobs-page, .employers-page
+    {
+        .main-navigation
+        {
+            .close-nav-container
+            {
+                top: 38px;
+                right: 54px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 400px)
+{    
+    .home-page
+    {
+        .main-navigation
+        {
+            .close-nav-container
+            {
+                top: 80px;
+                right: 35px;
+            }
+        }
+    }
+    
     .jobs-page, .employers-page
     {
         .main-navigation
@@ -141,7 +180,7 @@
             {
                 position: absolute;
                 top: 40px;
-                right: 25px;
+                right: 20px;
                 width: 42px;
                 height: 30px;
                 border: 2px solid $white;
@@ -165,7 +204,6 @@
     
     .overlay
     {
-        
         .primary-nav-content
         {
             

@@ -717,7 +717,7 @@ footer {
 
 @media only screen and (min-width: 580px) and (max-width: 800px) {
   .jobs-page header, .employers-page header {
-    width: 80% !important; }
+    width: 100%; }
     .jobs-page header .container, .employers-page header .container {
       margin-left: 80px;
       width: 80% !important; }
@@ -859,11 +859,22 @@ footer {
       .main-navigation .overlay .secondary-nav-content a:hover {
         color: #000000; }
 
+@media only screen and (min-width: 580px) and (max-width: 800px) {
+  .home-page .main-navigation .close-nav-container {
+    top: 86px;
+    right: 54px; }
+  .jobs-page .main-navigation .close-nav-container, .employers-page .main-navigation .close-nav-container {
+    top: 38px;
+    right: 54px; } }
+
 @media only screen and (max-width: 400px) {
+  .home-page .main-navigation .close-nav-container {
+    top: 80px;
+    right: 35px; }
   .jobs-page .main-navigation .close-nav-container, .employers-page .main-navigation .close-nav-container {
     position: absolute;
     top: 40px;
-    right: 25px;
+    right: 20px;
     width: 42px;
     height: 30px;
     border: 2px solid #FFFFFF;
@@ -921,12 +932,12 @@ footer {
         padding-left: 1.7%; }
         .home-page header .navigation ul li a {
           color: #000000; }
-        .home-page header .navigation ul li .nav-link {
+        .home-page header .navigation ul li .navigation__link {
           -webkit-transition: .3s ease-out;
           transition: .3s ease-out;
           border-bottom: solid 2px transparent;
           padding-bottom: 5px; }
-          .home-page header .navigation ul li .nav-link:hover {
+          .home-page header .navigation ul li .navigation__link:hover {
             border-bottom: 2px solid #000000;
             padding-bottom: 5px; }
         .home-page header .navigation ul li .navigation__triangle--green {
@@ -1671,7 +1682,8 @@ footer {
 .employers-page .work {
   margin-top: -7px;
   background-color: #F5F5F5;
-  padding-bottom: 120px; }
+  padding-bottom: 120px;
+  margin-bottom: -1px; }
   .employers-page .work h2 {
     margin-top: 5px;
     font-family: FuturaBook;
