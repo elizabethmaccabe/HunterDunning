@@ -98,7 +98,7 @@
                         }
                     }
 
-                    .nav-link
+                    .navigation__link
                     {
                         transition: .3s ease-out;
                         border-bottom: solid 2px transparent;
@@ -205,6 +205,7 @@
                         width: 42px;
                         height: 30px;
                         padding: 6px 7px;
+                        z-index: 2;
 
                         &:hover
                         {

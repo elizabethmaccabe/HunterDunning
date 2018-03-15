@@ -404,7 +404,6 @@ th {
   .select select {
     border: none;
     outline: none;
-    -webkit-appearance: none;
     background-color: #FFFFFF;
     color: #464646;
     font-weight: 16px;
@@ -458,88 +457,23 @@ th {
   src: url("../fonts/Futura BT Light.ttf"); }
 
 @font-face {
-  font-family: FuturaLightItalic;
-  src: url("../fonts/Futura BT Light Italic.ttf"); }
-
-@font-face {
   font-family: FuturaBook;
   src: url("../fonts/Futura BT Book.ttf"); }
-
-@font-face {
-  font-family: FuturaBookItalic;
-  src: url("../fonts/Futura BT Book Italic.ttf"); }
-
-@font-face {
-  font-family: FuturaMedium;
-  src: url("../fonts/Futura BT Medium.ttf"); }
-
-@font-face {
-  font-family: FuturaMediumItalic;
-  src: url("../fonts/Futura BT Medium Italic.ttf"); }
-
-@font-face {
-  font-family: FuturaHeavy;
-  src: url("../fonts/Futura BT Heavy.ttf"); }
-
-@font-face {
-  font-family: FuturaHeavyItalic;
-  src: url("../fonts/Futura BT Heavy Italic.ttf"); }
-
-@font-face {
-  font-family: FuturaBoldItalic;
-  src: url("../fonts/Futura BT Bold Italic.ttf"); }
-
-@font-face {
-  font-family: FuturaExtraBlack;
-  src: url("../fonts/Futura BT Extra Black.ttf"); }
-
-@font-face {
-  font-family: FuturaCondensedLight;
-  src: url("../fonts/Futura BT Condensed Light.ttf"); }
-
-@font-face {
-  font-family: FuturaCondensedMedium;
-  src: url("../fonts/Futura BT Condensed Medium.ttf"); }
-
-@font-face {
-  font-family: FuturaCondensedBold;
-  src: url("../fonts/Futura BT Condensed Bold.ttf"); }
 
 @font-face {
   font-family: GothamLight;
   src: url("../fonts/Gotham Light.ttf"); }
 
 @font-face {
-  font-family: GothamLightItalic;
-  src: url("../fonts/Gotham Light Italic.ttf"); }
-
-@font-face {
   font-family: GothamBook;
   src: url("../fonts/Gotham Book.ttf"); }
-
-@font-face {
-  font-family: GothamBookItalic;
-  src: url("../fonts/Gotham Book Italic.ttf"); }
 
 @font-face {
   font-family: GothamMedium;
   src: url("../fonts/Gotham Medium.ttf"); }
 
-@font-face {
-  font-family: GothamMediumItalic;
-  src: url("../fonts/Gotham Medium Italic.ttf"); }
-
-@font-face {
-  font-family: GothamBold;
-  src: url("../fonts/Gotham Bold.ttf"); }
-
-@font-face {
-  font-family: GothamBoldItalic;
-  src: url("../fonts/Gotham Bold Italic.ttf"); }
-
 html, body {
-  font-family: GothamBook, "Arial", sans-serif;
-  -webkit-font-smoothing: antialiased; }
+  font-family: GothamLight, "Arial", sans-serif; }
 
 h1 {
   font-size: 55px;
@@ -767,12 +701,12 @@ footer {
             background-color: #FFFFFF;
             -webkit-filter: invert(100%);
             filter: invert(100%); }
-        .jobs-page header .navigation ul li .nav-link, .employers-page header .navigation ul li .nav-link {
+        .jobs-page header .navigation ul li .navigation__link, .employers-page header .navigation ul li .navigation__link {
           -webkit-transition: .3s ease-out;
           transition: .3s ease-out;
           border-bottom: solid 2px transparent;
           padding-bottom: 5px; }
-          .jobs-page header .navigation ul li .nav-link:hover, .employers-page header .navigation ul li .nav-link:hover {
+          .jobs-page header .navigation ul li .navigation__link:hover, .employers-page header .navigation ul li .navigation__link:hover {
             border-bottom: 2px solid #000000;
             padding-bottom: 5px; }
         .jobs-page header .navigation ul li .navigation__triangle--green, .employers-page header .navigation ul li .navigation__triangle--green {
@@ -819,7 +753,8 @@ footer {
           border: solid 2px #000000;
           width: 42px;
           height: 30px;
-          padding: 6px 7px; }
+          padding: 6px 7px;
+          z-index: 2; }
           .jobs-page header .mobile-nav ul .open-nav:hover, .employers-page header .mobile-nav ul .open-nav:hover {
             border: solid 2px #FFFFFF;
             background-color: #FFFFFF;
@@ -1224,7 +1159,7 @@ footer {
   z-index: 0;
   background-color: #F5F5F5;
   padding-bottom: 132px;
-  margin-top: -32px; }
+  margin-top: 22px; }
   .home-page .companies .info {
     padding-top: 57px;
     display: inline-block;
@@ -1914,7 +1849,7 @@ footer {
     .home-page .skyline:after {
       background-image: none; }
   .home-page .companies {
-    margin-top: -54px; }
+    margin-top: 0px; }
     .home-page .companies .info {
       display: block;
       width: 100%;
@@ -2095,7 +2030,7 @@ footer {
     .home-page .skyline:after {
       background-image: none; }
   .home-page .companies {
-    margin-top: -54px;
+    margin-top: 0px;
     padding-bottom: 80px; }
     .home-page .companies .info {
       display: block;
