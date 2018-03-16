@@ -679,6 +679,9 @@ footer {
       display: block;
       list-style: none;
       margin-top: 14px; }
+      .jobs-page header .navigation ul li:first-child, .employers-page header .navigation ul li:first-child {
+        color: #464646;
+        text-decoration: none; }
       .jobs-page header .navigation ul li:last-child, .employers-page header .navigation ul li:last-child {
         margin-left: 2px; }
       .jobs-page header .navigation ul li, .employers-page header .navigation ul li {
